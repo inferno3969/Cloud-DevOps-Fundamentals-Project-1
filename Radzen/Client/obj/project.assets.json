@@ -2954,11 +2954,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/nathanaelallison/Desktop/Radzen/Client/RadzenTest.Client.csproj",
+      "projectUniqueName": "/Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Client/RadzenTest.Client.csproj",
       "projectName": "RadzenTest.Client",
-      "projectPath": "/Users/nathanaelallison/Desktop/Radzen/Client/RadzenTest.Client.csproj",
+      "projectPath": "/Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Client/RadzenTest.Client.csproj",
       "packagesPath": "/Users/nathanaelallison/.nuget/packages/",
-      "outputPath": "/Users/nathanaelallison/Desktop/Radzen/Client/obj/",
+      "outputPath": "/Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Client/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/nathanaelallison/.nuget/NuGet/NuGet.Config"

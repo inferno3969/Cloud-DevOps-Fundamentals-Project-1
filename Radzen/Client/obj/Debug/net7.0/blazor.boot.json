@@ -213,13 +213,13 @@
       "mscorlib.dll": "sha256-UH9jptJH1wZ3XMBPuMMAEaUKpfRxc5AgXkLdAFAvNVE=",
       "netstandard.dll": "sha256-+jUzj0FB0YcoBUeSkSNEjhVDTG08qbZ2twfCBMbzT+Q=",
       "System.Private.CoreLib.dll": "sha256-l+\/quNqfNCSUDSMJcp0+IxlSdOdnAtwVVWMXmYGHMpg=",
-      "RadzenTest.Client.dll": "sha256-dfLI1LKG3mqZ3h5YIFyR7xENIHk51+GmEXKK03WjNPQ="
+      "RadzenTest.Client.dll": "sha256-R2KA0AoPp\/8\/So9bYDX29saznWE408bxEY\/bDZ1RGy0="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "RadzenTest.Client.pdb": "sha256-XHAZlR6pnckaTN+ENLFUs0jHz8oMmcDfw+wjZ9Vsnjk="
+      "RadzenTest.Client.pdb": "sha256-3KNDLqLl7fHp5k+S2h8qWm8LArfwQr2ROSh7frZCnb4="
     },
     "runtime": {
       "dotnet.7.0.1.s8tuw0ht1u.js": "sha256-jjax3FMRXzFAziWowdtJf6vipP2xXAaA5gD6VBYB6Y0=",

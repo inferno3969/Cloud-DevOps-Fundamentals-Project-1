@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/nathanaelallison/Desktop/Radzen/Server/RadzenTest.Server.csproj": {}
+    "/Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Server/RadzenTest.Server.csproj": {}
   },
   "projects": {
-    "/Users/nathanaelallison/Desktop/Radzen/Client/RadzenTest.Client.csproj": {
+    "/Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Client/RadzenTest.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nathanaelallison/Desktop/Radzen/Client/RadzenTest.Client.csproj",
+        "projectUniqueName": "/Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Client/RadzenTest.Client.csproj",
         "projectName": "RadzenTest.Client",
-        "projectPath": "/Users/nathanaelallison/Desktop/Radzen/Client/RadzenTest.Client.csproj",
+        "projectPath": "/Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Client/RadzenTest.Client.csproj",
         "packagesPath": "/Users/nathanaelallison/.nuget/packages/",
-        "outputPath": "/Users/nathanaelallison/Desktop/Radzen/Client/obj/",
+        "outputPath": "/Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Client/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/nathanaelallison/.nuget/NuGet/NuGet.Config"
@@ -99,14 +99,14 @@
         }
       }
     },
-    "/Users/nathanaelallison/Desktop/Radzen/Server/RadzenTest.Server.csproj": {
+    "/Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Server/RadzenTest.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nathanaelallison/Desktop/Radzen/Server/RadzenTest.Server.csproj",
+        "projectUniqueName": "/Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Server/RadzenTest.Server.csproj",
         "projectName": "RadzenTest.Server",
-        "projectPath": "/Users/nathanaelallison/Desktop/Radzen/Server/RadzenTest.Server.csproj",
+        "projectPath": "/Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Server/RadzenTest.Server.csproj",
         "packagesPath": "/Users/nathanaelallison/.nuget/packages/",
-        "outputPath": "/Users/nathanaelallison/Desktop/Radzen/Server/obj/",
+        "outputPath": "/Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Server/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/nathanaelallison/.nuget/NuGet/NuGet.Config"
@@ -121,8 +121,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/nathanaelallison/Desktop/Radzen/Client/RadzenTest.Client.csproj": {
-                "projectPath": "/Users/nathanaelallison/Desktop/Radzen/Client/RadzenTest.Client.csproj"
+              "/Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Client/RadzenTest.Client.csproj": {
+                "projectPath": "/Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Client/RadzenTest.Client.csproj"
               }
             }
           }
