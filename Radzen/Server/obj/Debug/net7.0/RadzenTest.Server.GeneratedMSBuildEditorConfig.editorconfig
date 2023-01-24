@@ -9,17 +9,17 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RadzenTest.Server
 build_property.RootNamespace = RadzenTest.Server
-build_property.ProjectDir = /Users/nathanaelallison/Desktop/Radzen/Server/
+build_property.ProjectDir = /Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Server/
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/nathanaelallison/Desktop/Radzen/Server
+build_property.MSBuildProjectDirectory = /Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Server
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/nathanaelallison/Desktop/Radzen/Server/Pages/Error.cshtml]
+[/Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Server/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nathanaelallison/Desktop/Radzen/Server/Pages/_Host.cshtml]
+[/Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Server/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

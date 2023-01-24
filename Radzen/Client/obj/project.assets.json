@@ -496,7 +496,7 @@
           }
         }
       },
-      "Radzen.Blazor/4.5.2": {
+      "Radzen.Blazor/4.6.2": {
         "type": "package",
         "dependencies": {
           "LibSassBuilder": "2.0.1",
@@ -1107,7 +1107,7 @@
           }
         }
       },
-      "Radzen.Blazor/4.5.2": {
+      "Radzen.Blazor/4.6.2": {
         "type": "package",
         "dependencies": {
           "LibSassBuilder": "2.0.1",
@@ -2095,10 +2095,10 @@
         "microsoft.jsinterop.webassembly.nuspec"
       ]
     },
-    "Radzen.Blazor/4.5.2": {
-      "sha512": "fv70pQEIWlzZBi2SBur+l6FxCp2LujkE673a/yGXrtyJghDY3yNjdKhF7NH+4H/d6PggLMOWa9Qtp3va/7+Tvw==",
+    "Radzen.Blazor/4.6.2": {
+      "sha512": "kt+7Q7cATnTmSMPsxa+N+PRUjWqgNZVMoAJmqaPO4Owj27M9I6qmoB921GWc/WzNxlsUElL/LKjWzFZiXArZFA==",
       "type": "package",
-      "path": "radzen.blazor/4.5.2",
+      "path": "radzen.blazor/4.6.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2117,7 +2117,7 @@
         "lib/net7.0/Radzen.Blazor.xml",
         "lib/netstandard2.1/Radzen.Blazor.dll",
         "lib/netstandard2.1/Radzen.Blazor.xml",
-        "radzen.blazor.4.5.2.nupkg.sha512",
+        "radzen.blazor.4.6.2.nupkg.sha512",
         "radzen.blazor.nuspec",
         "staticwebassets/Radzen.Blazor.js",
         "staticwebassets/css/dark-base.css",
@@ -2379,11 +2379,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/nathanaelallison/Desktop/Radzen/Client/RadzenTest.Client.csproj",
+      "projectUniqueName": "/Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Client/RadzenTest.Client.csproj",
       "projectName": "RadzenTest.Client",
-      "projectPath": "/Users/nathanaelallison/Desktop/Radzen/Client/RadzenTest.Client.csproj",
+      "projectPath": "/Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Client/RadzenTest.Client.csproj",
       "packagesPath": "/Users/nathanaelallison/.nuget/packages/",
-      "outputPath": "/Users/nathanaelallison/Desktop/Radzen/Client/obj/",
+      "outputPath": "/Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Client/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/nathanaelallison/.nuget/NuGet/NuGet.Config"

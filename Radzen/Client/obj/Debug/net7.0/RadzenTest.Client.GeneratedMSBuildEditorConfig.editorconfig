@@ -9,49 +9,49 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = RadzenTest.Client
 build_property.RootNamespace = RadzenTest.Client
-build_property.ProjectDir = /Users/nathanaelallison/Desktop/Radzen/Client/
+build_property.ProjectDir = /Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Client/
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/nathanaelallison/Desktop/Radzen/Client
+build_property.MSBuildProjectDirectory = /Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Client
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/nathanaelallison/Desktop/Radzen/Client/App.razor]
+[/Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Client/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nathanaelallison/Desktop/Radzen/Client/Pages/AddTestTable.razor]
+[/Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Client/Pages/AddTestTable.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRkVGVzdFRhYmxlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nathanaelallison/Desktop/Radzen/Client/Pages/AddTestTable2.razor]
+[/Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Client/Pages/AddTestTable2.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRkVGVzdFRhYmxlMi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nathanaelallison/Desktop/Radzen/Client/Pages/EditTestTable.razor]
+[/Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Client/Pages/EditTestTable.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRWRpdFRlc3RUYWJsZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nathanaelallison/Desktop/Radzen/Client/Pages/EditTestTable2.razor]
+[/Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Client/Pages/EditTestTable2.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRWRpdFRlc3RUYWJsZTIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nathanaelallison/Desktop/Radzen/Client/Pages/Index.razor]
+[/Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Client/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nathanaelallison/Desktop/Radzen/Client/Pages/TestTable2S.razor]
+[/Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Client/Pages/TestTable2S.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVGVzdFRhYmxlMlMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nathanaelallison/Desktop/Radzen/Client/Pages/TestTables.razor]
+[/Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Client/Pages/TestTables.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVGVzdFRhYmxlcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nathanaelallison/Desktop/Radzen/Client/Shared/MainLayout.razor]
+[/Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Client/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nathanaelallison/Desktop/Radzen/Client/_Imports.razor]
+[/Users/nathanaelallison/Desktop/South Hills Year 2/Winter Term/Cloud and DevOps Fundamentals/Projects/Project 1/Cloud-DevOps-Fundamentals-Project-1/Radzen/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
