@@ -38,6 +38,9 @@ namespace RadzenTest.Client.Pages
         protected RadzenDataGrid<RadzenTest.Server.Models.DevOps_Proj_Database.TestTable> grid0;
         protected int count;
 
+        [Inject]
+        protected SecurityService Security { get; set; }
+
         protected async Task Grid0LoadData(LoadDataArgs args)
         {
             try

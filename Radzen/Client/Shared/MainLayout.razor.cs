@@ -34,9 +34,20 @@ namespace RadzenTest.Client.Shared
 
         private bool sidebarExpanded = true;
 
+        [Inject]
+        protected SecurityService Security { get; set; }
+
         void SidebarToggleClick()
         {
             sidebarExpanded = !sidebarExpanded;
+        }
+
+        protected void ProfileMenuClick(RadzenProfileMenuItem args)
+        {
+            if (args.Value == "Logout")
+            {
+                Security.Logout();
+            }
         }
     }
 }

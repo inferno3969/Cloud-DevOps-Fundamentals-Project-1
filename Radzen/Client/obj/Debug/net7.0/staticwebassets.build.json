@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "iGJYSLkEoKkFfWPWZWgKZBxfIXKyjoSwSBARndMtL+A=",
+  "Hash": "1sRGJRWPusKjv3ulKUiWg0b5XNIFJO7PH8uTyN0vWWw=",
   "Source": "RadzenTest.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/microsoft.aspnetcore.components.webassembly.authentication/7.0.0/staticwebassets/AuthenticationService.js"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/css/dark-base.css",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/css/dark-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/dark-base.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/css/dark-base.css"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/css/dark-base.css"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/css/dark.css",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/css/dark.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/dark.css",
       "AssetKind": "All",
@@ -65,13 +65,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/css/dark.css"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/css/dark.css"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/css/default-base.css",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/css/default-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/default-base.css",
       "AssetKind": "All",
@@ -82,13 +82,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/css/default-base.css"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/css/default-base.css"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/css/default.css",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/css/default.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/default.css",
       "AssetKind": "All",
@@ -99,13 +99,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/css/default.css"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/css/default.css"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/css/humanistic-base.css",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/css/humanistic-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/humanistic-base.css",
       "AssetKind": "All",
@@ -116,13 +116,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/css/humanistic-base.css"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/css/humanistic-base.css"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/css/humanistic.css",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/css/humanistic.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/humanistic.css",
       "AssetKind": "All",
@@ -133,13 +133,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/css/humanistic.css"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/css/humanistic.css"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/css/material-base.css",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/css/material-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/material-base.css",
       "AssetKind": "All",
@@ -150,13 +150,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/css/material-base.css"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/css/material-base.css"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/css/material.css",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/css/material.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/material.css",
       "AssetKind": "All",
@@ -167,13 +167,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/css/material.css"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/css/material.css"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/css/software-base.css",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/css/software-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/software-base.css",
       "AssetKind": "All",
@@ -184,13 +184,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/css/software-base.css"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/css/software-base.css"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/css/software.css",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/css/software.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/software.css",
       "AssetKind": "All",
@@ -201,13 +201,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/css/software.css"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/css/software.css"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/css/standard-base.css",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/css/standard-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/standard-base.css",
       "AssetKind": "All",
@@ -218,13 +218,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/css/standard-base.css"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/css/standard-base.css"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/css/standard.css",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/css/standard.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/standard.css",
       "AssetKind": "All",
@@ -235,13 +235,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/css/standard.css"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/css/standard.css"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/MaterialIcons-Regular.woff",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/MaterialIcons-Regular.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/MaterialIcons-Regular.woff",
       "AssetKind": "All",
@@ -252,13 +252,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/MaterialIcons-Regular.woff"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/MaterialIcons-Regular.woff"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/roboto-v15-latin-300.woff",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/roboto-v15-latin-300.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v15-latin-300.woff",
       "AssetKind": "All",
@@ -269,13 +269,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/roboto-v15-latin-300.woff"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/roboto-v15-latin-300.woff"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/roboto-v15-latin-700.woff",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/roboto-v15-latin-700.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v15-latin-700.woff",
       "AssetKind": "All",
@@ -286,13 +286,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/roboto-v15-latin-700.woff"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/roboto-v15-latin-700.woff"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/roboto-v15-latin-regular.woff",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/roboto-v15-latin-regular.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v15-latin-regular.woff",
       "AssetKind": "All",
@@ -303,13 +303,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/roboto-v15-latin-regular.woff"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/roboto-v15-latin-regular.woff"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/roboto-v30-latin-300.woff",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/roboto-v30-latin-300.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v30-latin-300.woff",
       "AssetKind": "All",
@@ -320,13 +320,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/roboto-v30-latin-300.woff"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/roboto-v30-latin-300.woff"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/roboto-v30-latin-500.woff",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/roboto-v30-latin-500.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v30-latin-500.woff",
       "AssetKind": "All",
@@ -337,13 +337,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/roboto-v30-latin-500.woff"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/roboto-v30-latin-500.woff"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/roboto-v30-latin-700.woff",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/roboto-v30-latin-700.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v30-latin-700.woff",
       "AssetKind": "All",
@@ -354,13 +354,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/roboto-v30-latin-700.woff"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/roboto-v30-latin-700.woff"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/roboto-v30-latin-regular.woff",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/roboto-v30-latin-regular.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v30-latin-regular.woff",
       "AssetKind": "All",
@@ -371,13 +371,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/roboto-v30-latin-regular.woff"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/roboto-v30-latin-regular.woff"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/SourceSansPro-Black.woff",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/SourceSansPro-Black.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-Black.woff",
       "AssetKind": "All",
@@ -388,13 +388,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/SourceSansPro-Black.woff"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/SourceSansPro-Black.woff"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/SourceSansPro-BlackIt.woff",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/SourceSansPro-BlackIt.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-BlackIt.woff",
       "AssetKind": "All",
@@ -405,13 +405,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/SourceSansPro-BlackIt.woff"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/SourceSansPro-BlackIt.woff"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/SourceSansPro-Bold.woff",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/SourceSansPro-Bold.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-Bold.woff",
       "AssetKind": "All",
@@ -422,13 +422,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/SourceSansPro-Bold.woff"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/SourceSansPro-Bold.woff"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/SourceSansPro-BoldIt.woff",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/SourceSansPro-BoldIt.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-BoldIt.woff",
       "AssetKind": "All",
@@ -439,13 +439,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/SourceSansPro-BoldIt.woff"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/SourceSansPro-BoldIt.woff"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/SourceSansPro-ExtraLight.woff",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/SourceSansPro-ExtraLight.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-ExtraLight.woff",
       "AssetKind": "All",
@@ -456,13 +456,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/SourceSansPro-ExtraLight.woff"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/SourceSansPro-ExtraLight.woff"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/SourceSansPro-ExtraLightIt.woff",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/SourceSansPro-ExtraLightIt.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-ExtraLightIt.woff",
       "AssetKind": "All",
@@ -473,13 +473,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/SourceSansPro-ExtraLightIt.woff"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/SourceSansPro-ExtraLightIt.woff"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/SourceSansPro-It.woff",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/SourceSansPro-It.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-It.woff",
       "AssetKind": "All",
@@ -490,13 +490,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/SourceSansPro-It.woff"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/SourceSansPro-It.woff"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/SourceSansPro-Light.woff",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/SourceSansPro-Light.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-Light.woff",
       "AssetKind": "All",
@@ -507,13 +507,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/SourceSansPro-Light.woff"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/SourceSansPro-Light.woff"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/SourceSansPro-LightIt.woff",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/SourceSansPro-LightIt.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-LightIt.woff",
       "AssetKind": "All",
@@ -524,13 +524,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/SourceSansPro-LightIt.woff"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/SourceSansPro-LightIt.woff"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/SourceSansPro-Regular.woff",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/SourceSansPro-Regular.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-Regular.woff",
       "AssetKind": "All",
@@ -541,13 +541,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/SourceSansPro-Regular.woff"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/SourceSansPro-Regular.woff"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/SourceSansPro-Semibold.woff",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/SourceSansPro-Semibold.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-Semibold.woff",
       "AssetKind": "All",
@@ -558,13 +558,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/SourceSansPro-Semibold.woff"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/SourceSansPro-Semibold.woff"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/SourceSansPro-SemiboldIt.woff",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/SourceSansPro-SemiboldIt.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-SemiboldIt.woff",
       "AssetKind": "All",
@@ -575,13 +575,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/fonts/SourceSansPro-SemiboldIt.woff"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/fonts/SourceSansPro-SemiboldIt.woff"
     },
     {
-      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/Radzen.Blazor.js",
+      "Identity": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/Radzen.Blazor.js",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/",
+      "ContentRoot": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "Radzen.Blazor.js",
       "AssetKind": "All",
@@ -592,7 +592,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/staticwebassets/Radzen.Blazor.js"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/staticwebassets/Radzen.Blazor.js"
     },
     {
       "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/blazor.boot.json",
@@ -867,6 +867,57 @@
       "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/microsoft.aspnetcore.components.webassembly/7.0.0/lib/net7.0/Microsoft.AspNetCore.Components.WebAssembly.dll"
     },
     {
+      "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Cryptography.Internal.dll",
+      "SourceId": "RadzenTest.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Cryptography.Internal.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/microsoft.aspnetcore.cryptography.internal/7.0.0/lib/net7.0/Microsoft.AspNetCore.Cryptography.Internal.dll"
+    },
+    {
+      "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll",
+      "SourceId": "RadzenTest.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/7.0.0/lib/net7.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll"
+    },
+    {
+      "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll",
+      "SourceId": "RadzenTest.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/microsoft.aspnetcore.identity.entityframeworkcore/7.0.0/lib/net7.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll"
+    },
+    {
       "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Metadata.dll",
       "SourceId": "RadzenTest.Client",
       "SourceType": "Computed",
@@ -899,6 +950,91 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/7.0.1/runtimes/browser-wasm/lib/net7.0/Microsoft.CSharp.dll"
+    },
+    {
+      "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.EntityFrameworkCore.Abstractions.dll",
+      "SourceId": "RadzenTest.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.Abstractions.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.0/lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll"
+    },
+    {
+      "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.EntityFrameworkCore.dll",
+      "SourceId": "RadzenTest.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/microsoft.entityframeworkcore/7.0.0/lib/net6.0/Microsoft.EntityFrameworkCore.dll"
+    },
+    {
+      "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.EntityFrameworkCore.Relational.dll",
+      "SourceId": "RadzenTest.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.Relational.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.0/lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll"
+    },
+    {
+      "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Caching.Abstractions.dll",
+      "SourceId": "RadzenTest.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Caching.Abstractions.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/lib/net7.0/Microsoft.Extensions.Caching.Abstractions.dll"
+    },
+    {
+      "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Caching.Memory.dll",
+      "SourceId": "RadzenTest.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Caching.Memory.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/microsoft.extensions.caching.memory/7.0.0/lib/net7.0/Microsoft.Extensions.Caching.Memory.dll"
     },
     {
       "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Configuration.Abstractions.dll",
@@ -1086,6 +1222,40 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/microsoft.extensions.http/7.0.0/lib/net7.0/Microsoft.Extensions.Http.dll"
+    },
+    {
+      "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Identity.Core.dll",
+      "SourceId": "RadzenTest.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Identity.Core.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/microsoft.extensions.identity.core/7.0.0/lib/net7.0/Microsoft.Extensions.Identity.Core.dll"
+    },
+    {
+      "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Identity.Stores.dll",
+      "SourceId": "RadzenTest.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Identity.Stores.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/microsoft.extensions.identity.stores/7.0.0/lib/net7.0/Microsoft.Extensions.Identity.Stores.dll"
     },
     {
       "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Logging.Abstractions.dll",
@@ -1306,7 +1476,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.5.2/lib/net7.0/Radzen.Blazor.dll"
+      "OriginalItemSpec": "/Users/nathanaelallison/.nuget/packages/radzen.blazor/4.6.2/lib/net7.0/Radzen.Blazor.dll"
     },
     {
       "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/RadzenTest.Client.dll",
@@ -4233,6 +4403,23 @@
       "OriginalItemSpec": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/System.Security.Principal.dll"
     },
     {
+      "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/obj/Debug/net7.0/build-gz/0AzuiKPV.gz",
+      "SourceId": "RadzenTest.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll"
+    },
+    {
       "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/obj/Debug/net7.0/build-gz/0FoxZqWP.gz",
       "SourceId": "RadzenTest.Client",
       "SourceType": "Computed",
@@ -4554,6 +4741,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/blazor.webassembly.js"
+    },
+    {
+      "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/obj/Debug/net7.0/build-gz/7jkMj2jg.gz",
+      "SourceId": "RadzenTest.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Identity.Core.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Identity.Core.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Identity.Core.dll"
     },
     {
       "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/obj/Debug/net7.0/build-gz/7xec1Z6G.gz",
@@ -5032,6 +5236,23 @@
       "OriginalItemSpec": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/System.Transactions.dll"
     },
     {
+      "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/obj/Debug/net7.0/build-gz/drW8dVPV.gz",
+      "SourceId": "RadzenTest.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Caching.Abstractions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Caching.Abstractions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Caching.Abstractions.dll"
+    },
+    {
       "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/obj/Debug/net7.0/build-gz/DUVJX7ZM.gz",
       "SourceId": "RadzenTest.Client",
       "SourceType": "Computed",
@@ -5234,6 +5455,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/System.IO.Pipelines.dll"
+    },
+    {
+      "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/obj/Debug/net7.0/build-gz/f3pqUXy9.gz",
+      "SourceId": "RadzenTest.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.EntityFrameworkCore.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.EntityFrameworkCore.dll"
     },
     {
       "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/obj/Debug/net7.0/build-gz/fab0byBc.gz",
@@ -5627,6 +5865,23 @@
       "OriginalItemSpec": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/System.Diagnostics.DiagnosticSource.dll"
     },
     {
+      "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/obj/Debug/net7.0/build-gz/IY+fq3PJ.gz",
+      "SourceId": "RadzenTest.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.Relational.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.EntityFrameworkCore.Relational.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.EntityFrameworkCore.Relational.dll"
+    },
+    {
       "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/obj/Debug/net7.0/build-gz/JbOuSWUu.gz",
       "SourceId": "RadzenTest.Client",
       "SourceType": "Computed",
@@ -5899,6 +6154,23 @@
       "OriginalItemSpec": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/System.Threading.Overlapped.dll"
     },
     {
+      "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/obj/Debug/net7.0/build-gz/m4wWbn4F.gz",
+      "SourceId": "RadzenTest.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Radzen.Blazor.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Radzen.Blazor.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Radzen.Blazor.dll"
+    },
+    {
       "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/obj/Debug/net7.0/build-gz/Ma14P30N.gz",
       "SourceId": "RadzenTest.Client",
       "SourceType": "Computed",
@@ -6169,6 +6441,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/System.Threading.Tasks.dll"
+    },
+    {
+      "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/obj/Debug/net7.0/build-gz/oflqkLfB.gz",
+      "SourceId": "RadzenTest.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.Abstractions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.EntityFrameworkCore.Abstractions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.EntityFrameworkCore.Abstractions.dll"
     },
     {
       "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/obj/Debug/net7.0/build-gz/OFnZiOAr.gz",
@@ -6681,6 +6970,23 @@
       "OriginalItemSpec": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/System.Drawing.Primitives.dll"
     },
     {
+      "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/obj/Debug/net7.0/build-gz/rokXXv2X.gz",
+      "SourceId": "RadzenTest.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Identity.Stores.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Identity.Stores.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Identity.Stores.dll"
+    },
+    {
       "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/obj/Debug/net7.0/build-gz/RVY52mhy.gz",
       "SourceId": "RadzenTest.Client",
       "SourceType": "Computed",
@@ -6749,6 +7055,23 @@
       "OriginalItemSpec": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/System.Linq.Queryable.dll"
     },
     {
+      "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/obj/Debug/net7.0/build-gz/smr5BdZR.gz",
+      "SourceId": "RadzenTest.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Cryptography.Internal.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Cryptography.Internal.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Cryptography.Internal.dll"
+    },
+    {
       "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/obj/Debug/net7.0/build-gz/sMXeza81.gz",
       "SourceId": "RadzenTest.Client",
       "SourceType": "Computed",
@@ -6764,23 +7087,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/System.Security.AccessControl.dll"
-    },
-    {
-      "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/obj/Debug/net7.0/build-gz/sqC2YxD6.gz",
-      "SourceId": "RadzenTest.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/Radzen.Blazor.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Radzen.Blazor.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Radzen.Blazor.dll"
     },
     {
       "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/obj/Debug/net7.0/build-gz/sqmbyqxO.gz",
@@ -6985,6 +7291,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/System.Runtime.Numerics.dll"
+    },
+    {
+      "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/obj/Debug/net7.0/build-gz/uy7QYEu7.gz",
+      "SourceId": "RadzenTest.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Caching.Memory.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Caching.Memory.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Extensions.Caching.Memory.dll"
     },
     {
       "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/obj/Debug/net7.0/build-gz/v4CK+Mvc.gz",
@@ -7291,6 +7614,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/System.ComponentModel.DataAnnotations.dll"
+    },
+    {
+      "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/obj/Debug/net7.0/build-gz/Y2KWiahg.gz",
+      "SourceId": "RadzenTest.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/nathanaelallison/Desktop/Radzen/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll"
     },
     {
       "Identity": "/Users/nathanaelallison/Desktop/Radzen/Client/obj/Debug/net7.0/build-gz/Y4fE+9cS.gz",

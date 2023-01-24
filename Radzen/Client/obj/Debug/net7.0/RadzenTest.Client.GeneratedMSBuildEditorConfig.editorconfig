@@ -20,12 +20,32 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/nathanaelallison/Desktop/Radzen/Client/Pages/AddApplicationRole.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRkQXBwbGljYXRpb25Sb2xlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nathanaelallison/Desktop/Radzen/Client/Pages/AddApplicationUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRkQXBwbGljYXRpb25Vc2VyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/nathanaelallison/Desktop/Radzen/Client/Pages/AddTestTable.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRkVGVzdFRhYmxlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/nathanaelallison/Desktop/Radzen/Client/Pages/AddTestTable2.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRkVGVzdFRhYmxlMi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nathanaelallison/Desktop/Radzen/Client/Pages/ApplicationRoles.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXBwbGljYXRpb25Sb2xlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nathanaelallison/Desktop/Radzen/Client/Pages/ApplicationUsers.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXBwbGljYXRpb25Vc2Vycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nathanaelallison/Desktop/Radzen/Client/Pages/EditApplicationUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRWRpdEFwcGxpY2F0aW9uVXNlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/nathanaelallison/Desktop/Radzen/Client/Pages/EditTestTable.razor]
@@ -40,6 +60,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/nathanaelallison/Desktop/Radzen/Client/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nathanaelallison/Desktop/Radzen/Client/Pages/Profile.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZmlsZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/nathanaelallison/Desktop/Radzen/Client/Pages/TestTable2S.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVGVzdFRhYmxlMlMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -48,8 +76,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVGVzdFRhYmxlcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/nathanaelallison/Desktop/Radzen/Client/Pages/Unauthorized.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVW5hdXRob3JpemVkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nathanaelallison/Desktop/Radzen/Client/Shared/LoginLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0xvZ2luTGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/nathanaelallison/Desktop/Radzen/Client/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nathanaelallison/Desktop/Radzen/Client/Shared/RedirectToLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1JlZGlyZWN0VG9Mb2dpbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/nathanaelallison/Desktop/Radzen/Client/_Imports.razor]

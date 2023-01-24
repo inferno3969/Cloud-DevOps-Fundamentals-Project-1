@@ -42,6 +42,9 @@ namespace RadzenTest.Client.Pages
         protected bool errorVisible;
         protected RadzenTest.Server.Models.DevOps_Proj_Database.TestTable2 testTable2;
 
+        [Inject]
+        protected SecurityService Security { get; set; }
+
         protected async Task FormSubmit()
         {
             try

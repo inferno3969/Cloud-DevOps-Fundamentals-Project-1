@@ -14,7 +14,15 @@
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-LZ9\/rytjyZiFmFLJJ3eNXTIAlcm8dbKj\/vT3N6vPXqg=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-wa9dKaCIgfTZkr2Ca8QiW3bsjHFZw3Fn8X114nXO25o=",
       "Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll": "sha256-nPvEoLopX88anBlJcTsVx5N+4nsI3XvM6q2ReYc0194=",
+      "Microsoft.AspNetCore.Cryptography.Internal.dll": "sha256-GjasYPKOrGjjG86TUOqcviJhl+XXHcsbnXYQtqbp8AI=",
+      "Microsoft.AspNetCore.Cryptography.KeyDerivation.dll": "sha256-J9fz3Df17CBeDNUFJeEhxD+5s6oK2+tVHu\/0XIwlGzo=",
+      "Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll": "sha256-BdPQXxyT0wkSFF8is4Ap1WZKWI9rsMM4lkcyBZL7jcM=",
       "Microsoft.AspNetCore.Metadata.dll": "sha256-mFDOnLuhJraetVG1skdrXwUnBj7sNxv2HNiaJHjPGCw=",
+      "Microsoft.EntityFrameworkCore.dll": "sha256-fkB0k4ufcfowVFOPu44Q5vIgndrRW59pKZEwCgkVvBE=",
+      "Microsoft.EntityFrameworkCore.Abstractions.dll": "sha256-ki3HFT2MaMyFEpujQHD8LVuUNXYs+YaeJN+0Gr+Z0kY=",
+      "Microsoft.EntityFrameworkCore.Relational.dll": "sha256-rYh1dfpwtMLvmtKSqlJKBXHbScSem78+I9lRNY5k+qY=",
+      "Microsoft.Extensions.Caching.Abstractions.dll": "sha256-tiD1Xg\/wcoUkJVBDtLfs5EiB1IwSUm0d\/lPffRVbKOc=",
+      "Microsoft.Extensions.Caching.Memory.dll": "sha256-xNEDLuTrpWv6Lq76qNCi\/PYwN6Ev6cjFAzNQPsAKMfg=",
       "Microsoft.Extensions.Configuration.dll": "sha256-PqQvp77oZ4+uuy2ElXk8AU9I6RfZSf18UGTrd4rulOo=",
       "Microsoft.Extensions.Configuration.Abstractions.dll": "sha256-CnS3b9EMFQmETBUVEgtcron4DBsfFdcVt3zfCP6Uflg=",
       "Microsoft.Extensions.Configuration.Binder.dll": "sha256-3rTnsLgQSM1ims+xsGWGxVCZ1UNwRSmni\/CeDpwh434=",
@@ -26,13 +34,15 @@
       "Microsoft.Extensions.FileProviders.Physical.dll": "sha256-9xkIbIienaRj9Td2MyWYzL9JmVx6CKbGCPrvJ1Pxfn8=",
       "Microsoft.Extensions.FileSystemGlobbing.dll": "sha256-Gm0yiS5fySh2nZXdCRKZIbASK8sSukwjogLc+a9EBZY=",
       "Microsoft.Extensions.Http.dll": "sha256-QqjUvBFxKOeh8XX3IrmuIesFycYZMmwrhsRakmXvrXE=",
+      "Microsoft.Extensions.Identity.Core.dll": "sha256-4piYo9cLEtAVDMa6Li2qBYhmo6r25E4pE9neINS1574=",
+      "Microsoft.Extensions.Identity.Stores.dll": "sha256-gXBvW+5qTl47I5wszt5mLhMN6pykQqoUYTJQ7w9gdQo=",
       "Microsoft.Extensions.Logging.dll": "sha256-WMsuY8rhtg+vvssGFSR7ZLKhqYPAzOi538IXMoiJ6bI=",
       "Microsoft.Extensions.Logging.Abstractions.dll": "sha256-7zoKnNaWqWOrjF2eX3dFetJL+I03xqvCzORtFB4Ws08=",
       "Microsoft.Extensions.Options.dll": "sha256-rYT8laJlOlF0qyGuqjSmgDWb3Mk5aO1P2d9ojmaAuL0=",
       "Microsoft.Extensions.Primitives.dll": "sha256-q4ruoDSCjV\/QJY9ZkzV6uxvEvZUVrDbyUjU3SSh5SlE=",
       "Microsoft.JSInterop.dll": "sha256-q17WovokqNgFuXZO8JzEh+dShJEutXJL12V9hSr+Q6s=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-LS1TECEw0D6FskWRcaDt51suj930x2zRQySVGe2mJ3o=",
-      "Radzen.Blazor.dll": "sha256-\/451gi55bv3cVjTvVcwZ0nz6W3XbTpFi3+SG1F6T1LU=",
+      "Radzen.Blazor.dll": "sha256-FpBNa8HUyEGSmOAXj7yZs27ki6IBbeqGVHZPB6u\/HAI=",
       "System.IO.Pipelines.dll": "sha256-P\/MqD0fCBd5bgTM16JC1QC\/Zz7s+CwViyzmDFkBG4\/c=",
       "System.Linq.Dynamic.Core.dll": "sha256-SetHNtEBbS0VL\/dxzjLcAGfOJQ1aCdalKVL6isWUm2M=",
       "Microsoft.CSharp.dll": "sha256-GhERxeDKNq+W+cSRzWmwGTi+JNQZOlZHtn1A06oKs6k=",
@@ -203,13 +213,13 @@
       "mscorlib.dll": "sha256-UH9jptJH1wZ3XMBPuMMAEaUKpfRxc5AgXkLdAFAvNVE=",
       "netstandard.dll": "sha256-+jUzj0FB0YcoBUeSkSNEjhVDTG08qbZ2twfCBMbzT+Q=",
       "System.Private.CoreLib.dll": "sha256-l+\/quNqfNCSUDSMJcp0+IxlSdOdnAtwVVWMXmYGHMpg=",
-      "RadzenTest.Client.dll": "sha256-4y9U86yROiUgtkdPi6pYaP8ov6U3nOLsSPQMaGta+cY="
+      "RadzenTest.Client.dll": "sha256-dfLI1LKG3mqZ3h5YIFyR7xENIHk51+GmEXKK03WjNPQ="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "RadzenTest.Client.pdb": "sha256-vLBD1PK37d1HQZV3YQDQYnLV\/Wf4Pts91MQ+doAhlNg="
+      "RadzenTest.Client.pdb": "sha256-XHAZlR6pnckaTN+ENLFUs0jHz8oMmcDfw+wjZ9Vsnjk="
     },
     "runtime": {
       "dotnet.7.0.1.s8tuw0ht1u.js": "sha256-jjax3FMRXzFAziWowdtJf6vipP2xXAaA5gD6VBYB6Y0=",
