@@ -1,0 +1,72 @@
+@page "/employees"
+
+<PageTitle>Employees</PageTitle>
+<div class="row" style="margin-bottom: 1rem">
+    <div class="col-12 col-md-6">
+        <RadzenText Text="Employees" TextStyle="TextStyle.H3" TagName="TagName.H1" style="margin: 0" />
+    </div>
+    <div class="col-12 col-md-6 justify-content-start justify-content-md-end" style="display: flex; align-items: center; flex-wrap: wrap; gap: 0.5rem">
+    <RadzenButton Icon="add_circle_outline" style="margin-bottom: 10px" Text="Add" Click="@AddButtonClick" Variant="Variant.Flat" />
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <RadzenDataGrid @ref="grid0" ColumnWidth="200px"  AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true"
+            Data="@employees" Count=count LoadData=@Grid0LoadData RowUpdate=@GridRowUpdate RowCreate=@GridRowCreate TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Employee" >
+            <Columns>
+                <RadzenDataGridColumn TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Employee" Property="Emp_ID" Title="Emp_ID">
+                  <EditTemplate Context="employee">
+                      <RadzenNumeric style="display: block; width: 100%" @bind-Value="@employee.Emp_ID" Name="Emp_ID" />
+                  </EditTemplate>
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Employee" Property="Emp_Name" Title="Emp_Name">
+                  <EditTemplate Context="employee">
+                      <RadzenTextBox style="display: block; width: 100%" @bind-Value="@employee.Emp_Name" Name="Emp_Name" />
+                  </EditTemplate>
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Employee" Property="Emp_Address" Title="Emp_Address">
+                  <EditTemplate Context="employee">
+                      <RadzenTextBox style="display: block; width: 100%" @bind-Value="@employee.Emp_Address" Name="Emp_Address" />
+                  </EditTemplate>
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Employee" Property="Emp_Phone" Title="Emp_Phone">
+                  <EditTemplate Context="employee">
+                      <RadzenTextBox style="display: block; width: 100%" @bind-Value="@employee.Emp_Phone" Name="Emp_Phone" />
+                  </EditTemplate>
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Employee" Property="Plant.Plant_Name" Title="Plant">
+                  <EditTemplate Context="employee">
+                        <RadzenDropDown Data="@plantsForPlantID" TextProperty="Plant_Name" ValueProperty="Plant_ID"
+                            Placeholder="Choose Plant" style="display: block; width: 100%" @bind-Value="@employee.Plant_ID" Name="Plant_ID"
+                         Count=@plantsForPlantIDCount LoadData=@plantsForPlantIDLoadData />
+                  </EditTemplate>
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Employee" Property="Position.Pos_Name" Title="Position">
+                  <EditTemplate Context="employee">
+                        <RadzenDropDown Data="@positionsForPosID" TextProperty="Pos_Name" ValueProperty="Pos_ID"
+                            Placeholder="Choose Position" style="display: block; width: 100%" @bind-Value="@employee.Pos_ID" Name="Pos_ID"
+                         Count=@positionsForPosIDCount LoadData=@positionsForPosIDLoadData />
+                  </EditTemplate>
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Employee" Filterable="false" Sortable="false" Width="156px" TextAlign="TextAlign.Center">
+                    <EditTemplate Context="employee">
+                        <RadzenButton Icon="check" ButtonStyle="ButtonStyle.Success" Variant="Variant.Flat" Size="ButtonSize.Medium"
+                            style="margin-top: 0.25rem; margin-right: 0.25rem; margin-bottom: 0.25rem"
+                            Click=@(args => SaveButtonClick(args, employee)) @onclick:stopPropagation="true" />
+                        <RadzenButton Icon="close" ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat" Size="ButtonSize.Medium"
+                            Click=@(args => CancelButtonClick(args, employee)) @onclick:stopPropagation="true" />
+                    </EditTemplate>
+                    <Template Context="employee">
+
+                        <RadzenButton Icon="edit" ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat" Size="ButtonSize.Medium"
+                            style="margin-top: 0.25rem; margin-right: 0.25rem; margin-bottom: 0.25rem"
+                            Click=@(args => EditButtonClick(args, employee)) @onclick:stopPropagation="true" />
+                        <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
+                            Shade="Shade.Lighter" Variant="Variant.Flat"
+                            Click=@(args => GridDeleteButtonClick(args, employee)) @onclick:stopPropagation="true" />
+                    </Template>
+                </RadzenDataGridColumn>
+            </Columns>
+        </RadzenDataGrid>
+    </div>
+</div>

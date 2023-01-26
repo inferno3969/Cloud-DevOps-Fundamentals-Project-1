@@ -1,0 +1,58 @@
+@page "/managers"
+
+<PageTitle>Managers</PageTitle>
+<div class="row" style="margin-bottom: 1rem">
+    <div class="col-12 col-md-6">
+        <RadzenText Text="Managers" TextStyle="TextStyle.H3" TagName="TagName.H1" style="margin: 0" />
+    </div>
+    <div class="col-12 col-md-6 justify-content-start justify-content-md-end" style="display: flex; align-items: center; flex-wrap: wrap; gap: 0.5rem">
+    <RadzenButton Icon="add_circle_outline" style="margin-bottom: 10px" Text="Add" Click="@AddButtonClick" Variant="Variant.Flat" />
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <RadzenDataGrid @ref="grid0" ColumnWidth="200px"  AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true"
+            Data="@managers" Count=count LoadData=@Grid0LoadData RowUpdate=@GridRowUpdate RowCreate=@GridRowCreate TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Manager" >
+            <Columns>
+                <RadzenDataGridColumn TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Manager" Property="Manager_ID" Title="Manager_ID">
+                  <EditTemplate Context="manager">
+                      <RadzenNumeric style="display: block; width: 100%" @bind-Value="@manager.Manager_ID" Name="Manager_ID" />
+                      <RadzenRequiredValidator Component="Manager_ID" Text="Manager_ID is required" style="position: absolute" />
+                  </EditTemplate>
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Manager" Property="Employee.Emp_Name" Title="Employee">
+                  <EditTemplate Context="manager">
+                        <RadzenDropDown Data="@employeesForEmpID" TextProperty="Emp_Name" ValueProperty="Emp_ID"
+                            Placeholder="Choose Employee" style="display: block; width: 100%" @bind-Value="@manager.Emp_ID" Name="Emp_ID"
+                         Count=@employeesForEmpIDCount LoadData=@employeesForEmpIDLoadData />
+                  </EditTemplate>
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Manager" Property="Plant.Plant_Name" Title="Plant">
+                  <EditTemplate Context="manager">
+                        <RadzenDropDown Data="@plantsForPlantID" TextProperty="Plant_Name" ValueProperty="Plant_ID"
+                            Placeholder="Choose Plant" style="display: block; width: 100%" @bind-Value="@manager.Plant_ID" Name="Plant_ID"
+                         Count=@plantsForPlantIDCount LoadData=@plantsForPlantIDLoadData />
+                  </EditTemplate>
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Manager" Filterable="false" Sortable="false" Width="156px" TextAlign="TextAlign.Center">
+                    <EditTemplate Context="manager">
+                        <RadzenButton Icon="check" ButtonStyle="ButtonStyle.Success" Variant="Variant.Flat" Size="ButtonSize.Medium"
+                            style="margin-top: 0.25rem; margin-right: 0.25rem; margin-bottom: 0.25rem"
+                            Click=@(args => SaveButtonClick(args, manager)) @onclick:stopPropagation="true" />
+                        <RadzenButton Icon="close" ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat" Size="ButtonSize.Medium"
+                            Click=@(args => CancelButtonClick(args, manager)) @onclick:stopPropagation="true" />
+                    </EditTemplate>
+                    <Template Context="manager">
+
+                        <RadzenButton Icon="edit" ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat" Size="ButtonSize.Medium"
+                            style="margin-top: 0.25rem; margin-right: 0.25rem; margin-bottom: 0.25rem"
+                            Click=@(args => EditButtonClick(args, manager)) @onclick:stopPropagation="true" />
+                        <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
+                            Shade="Shade.Lighter" Variant="Variant.Flat"
+                            Click=@(args => GridDeleteButtonClick(args, manager)) @onclick:stopPropagation="true" />
+                    </Template>
+                </RadzenDataGridColumn>
+            </Columns>
+        </RadzenDataGrid>
+    </div>
+</div>
