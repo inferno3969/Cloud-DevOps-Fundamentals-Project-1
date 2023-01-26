@@ -1,0 +1,5 @@
+Server: 	devops-proj-1.database.windows.net
+Auth Type: 	SQL Login
+Username: 	devopsadmin
+Password: 	Password123!
+Database: 	DevOps-Proj-Database
