@@ -67,13 +67,17 @@ namespace CloudDevOpsProject1.Server.Controllers.DevOps_Proj_Database
                 }
 
 
-                var item = this.context.TestTable2S
+                var items = this.context.TestTable2S
                     .Where(i => i.NateIsGay == Uri.UnescapeDataString(key))
-                    .FirstOrDefault();
+                    .AsQueryable();
+
+                items = Data.EntityPatch.ApplyTo<CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.TestTable2>(Request, items);
+
+                var item = items.FirstOrDefault();
 
                 if (item == null)
                 {
-                    return BadRequest();
+                    return StatusCode((int)HttpStatusCode.PreconditionFailed);
                 }
                 this.OnTestTable2Deleted(item);
                 this.context.TestTable2S.Remove(item);
@@ -104,9 +108,17 @@ namespace CloudDevOpsProject1.Server.Controllers.DevOps_Proj_Database
                     return BadRequest(ModelState);
                 }
 
-                if (item == null || (item.NateIsGay != Uri.UnescapeDataString(key)))
+                var items = this.context.TestTable2S
+                    .Where(i => i.NateIsGay == Uri.UnescapeDataString(key))
+                    .AsQueryable();
+
+                items = Data.EntityPatch.ApplyTo<CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.TestTable2>(Request, items);
+
+                var firstItem = items.FirstOrDefault();
+
+                if (firstItem == null)
                 {
-                    return BadRequest();
+                    return StatusCode((int)HttpStatusCode.PreconditionFailed);
                 }
                 this.OnTestTable2Updated(item);
                 this.context.TestTable2S.Update(item);
@@ -135,11 +147,17 @@ namespace CloudDevOpsProject1.Server.Controllers.DevOps_Proj_Database
                     return BadRequest(ModelState);
                 }
 
-                var item = this.context.TestTable2S.Where(i => i.NateIsGay == Uri.UnescapeDataString(key)).FirstOrDefault();
+                var items = this.context.TestTable2S
+                    .Where(i => i.NateIsGay == Uri.UnescapeDataString(key))
+                    .AsQueryable();
+
+                items = Data.EntityPatch.ApplyTo<CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.TestTable2>(Request, items);
+
+                var item = items.FirstOrDefault();
 
                 if (item == null)
                 {
-                    return BadRequest();
+                    return StatusCode((int)HttpStatusCode.PreconditionFailed);
                 }
                 patch.Patch(item);
 

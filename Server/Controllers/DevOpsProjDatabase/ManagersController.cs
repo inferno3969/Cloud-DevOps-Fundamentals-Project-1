@@ -67,13 +67,17 @@ namespace CloudDevOpsProject1.Server.Controllers.DevOps_Proj_Database
                 }
 
 
-                var item = this.context.Managers
+                var items = this.context.Managers
                     .Where(i => i.Manager_ID == key)
-                    .FirstOrDefault();
+                    .AsQueryable();
+
+                items = Data.EntityPatch.ApplyTo<CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Manager>(Request, items);
+
+                var item = items.FirstOrDefault();
 
                 if (item == null)
                 {
-                    return BadRequest();
+                    return StatusCode((int)HttpStatusCode.PreconditionFailed);
                 }
                 this.OnManagerDeleted(item);
                 this.context.Managers.Remove(item);
@@ -104,9 +108,17 @@ namespace CloudDevOpsProject1.Server.Controllers.DevOps_Proj_Database
                     return BadRequest(ModelState);
                 }
 
-                if (item == null || (item.Manager_ID != key))
+                var items = this.context.Managers
+                    .Where(i => i.Manager_ID == key)
+                    .AsQueryable();
+
+                items = Data.EntityPatch.ApplyTo<CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Manager>(Request, items);
+
+                var firstItem = items.FirstOrDefault();
+
+                if (firstItem == null)
                 {
-                    return BadRequest();
+                    return StatusCode((int)HttpStatusCode.PreconditionFailed);
                 }
                 this.OnManagerUpdated(item);
                 this.context.Managers.Update(item);
@@ -135,11 +147,17 @@ namespace CloudDevOpsProject1.Server.Controllers.DevOps_Proj_Database
                     return BadRequest(ModelState);
                 }
 
-                var item = this.context.Managers.Where(i => i.Manager_ID == key).FirstOrDefault();
+                var items = this.context.Managers
+                    .Where(i => i.Manager_ID == key)
+                    .AsQueryable();
+
+                items = Data.EntityPatch.ApplyTo<CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Manager>(Request, items);
+
+                var item = items.FirstOrDefault();
 
                 if (item == null)
                 {
-                    return BadRequest();
+                    return StatusCode((int)HttpStatusCode.PreconditionFailed);
                 }
                 patch.Patch(item);
 

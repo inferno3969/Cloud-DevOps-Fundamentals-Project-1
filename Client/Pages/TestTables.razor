@@ -1,4 +1,5 @@
-@page "/test-tables"
+@page "/test-tables"
+@attribute [Authorize]
 
 <PageTitle>TestTables</PageTitle>
 <div class="row" style="margin-bottom: 1rem">
@@ -12,32 +13,15 @@
 <div class="row">
     <div class="col-md-12">
         <RadzenDataGrid @ref="grid0" ColumnWidth="200px"  AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true"
-            Data="@testTables" Count=count LoadData=@Grid0LoadData RowUpdate=@GridRowUpdate RowCreate=@GridRowCreate TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.TestTable" >
+            Data="@testTables" Count=count LoadData=@Grid0LoadData  TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.TestTable" RowSelect="@EditRow" >
             <Columns>
                 <RadzenDataGridColumn TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.TestTable" Property="Test" Title="Test">
-                  <EditTemplate Context="testTable">
-                      <RadzenTextBox style="display: block; width: 100%" @bind-Value="@testTable.Test" Name="Test" />
-                      <RadzenRequiredValidator Component="Test" Text="Test is required" style="position: absolute" />
-                  </EditTemplate>
                 </RadzenDataGridColumn>
-                <RadzenDataGridColumn TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.TestTable" Property="CanNateSeeThis" Title="CanNateSeeThis">
-                  <EditTemplate Context="testTable">
-                      <RadzenNumeric style="display: block; width: 100%" @bind-Value="@testTable.CanNateSeeThis" Name="CanNateSeeThis" />
-                  </EditTemplate>
+                <RadzenDataGridColumn TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.TestTable" Property="CanNateSeeThis" Title="Can Nate See This">
                 </RadzenDataGridColumn>
-                <RadzenDataGridColumn TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.TestTable" Filterable="false" Sortable="false" Width="156px" TextAlign="TextAlign.Center">
-                    <EditTemplate Context="testTable">
-                        <RadzenButton Icon="check" ButtonStyle="ButtonStyle.Success" Variant="Variant.Flat" Size="ButtonSize.Medium"
-                            style="margin-top: 0.25rem; margin-right: 0.25rem; margin-bottom: 0.25rem"
-                            Click=@(args => SaveButtonClick(args, testTable)) @onclick:stopPropagation="true" />
-                        <RadzenButton Icon="close" ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat" Size="ButtonSize.Medium"
-                            Click=@(args => CancelButtonClick(args, testTable)) @onclick:stopPropagation="true" />
-                    </EditTemplate>
+                <RadzenDataGridColumn TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.TestTable" Filterable="false" Sortable="false" Width="70px" TextAlign="TextAlign.Center">
                     <Template Context="testTable">
 
-                        <RadzenButton Icon="edit" ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat" Size="ButtonSize.Medium"
-                            style="margin-top: 0.25rem; margin-right: 0.25rem; margin-bottom: 0.25rem"
-                            Click=@(args => EditButtonClick(args, testTable)) @onclick:stopPropagation="true" />
                         <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
                             Shade="Shade.Lighter" Variant="Variant.Flat"
                             Click=@(args => GridDeleteButtonClick(args, testTable)) @onclick:stopPropagation="true" />

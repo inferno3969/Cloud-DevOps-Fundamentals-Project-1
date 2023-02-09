@@ -38,6 +38,9 @@ namespace CloudDevOpsProject1.Client.Pages
         protected RadzenDataGrid<CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Employee> grid0;
         protected int count;
 
+        [Inject]
+        protected SecurityService Security { get; set; }
+
         protected async Task Grid0LoadData(LoadDataArgs args)
         {
             try
@@ -54,7 +57,14 @@ namespace CloudDevOpsProject1.Client.Pages
 
         protected async Task AddButtonClick(MouseEventArgs args)
         {
-            await grid0.InsertRow(new CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Employee());
+            await DialogService.OpenAsync<AddEmployee>("Add Employee", null);
+            await grid0.Reload();
+        }
+
+        protected async Task EditRow(CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Employee args)
+        {
+            await DialogService.OpenAsync<EditEmployee>("Edit Employee", new Dictionary<string, object> { {"Emp_ID", args.Emp_ID} });
+            await grid0.Reload();
         }
 
         protected async Task GridDeleteButtonClick(MouseEventArgs args, CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Employee employee)
@@ -80,81 +90,6 @@ namespace CloudDevOpsProject1.Client.Pages
                     Detail = $"Unable to delete Employee" 
                 });
             }
-        }
-        protected bool errorVisible;
-        protected CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Employee employee;
-
-        protected IEnumerable<CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Plant> plantsForPlantID;
-
-        protected IEnumerable<CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Position> positionsForPosID;
-
-
-        protected int plantsForPlantIDCount;
-        protected CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Plant plantsForPlantIDValue;
-        protected async Task plantsForPlantIDLoadData(LoadDataArgs args)
-        {
-            try
-            {
-                var result = await DevOps_Proj_DatabaseService.GetPlants();
-                plantsForPlantID = result.Value.AsODataEnumerable();
-                plantsForPlantIDCount = plantsForPlantID.Count();
-
-            }
-            catch (System.Exception ex)
-            {
-                NotificationService.Notify(new NotificationMessage(){ Severity = NotificationSeverity.Error, Summary = $"Error", Detail = $"Unable to load Radzen.Design.EntityProperty" });
-            }
-        }
-
-        protected int positionsForPosIDCount;
-        protected CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Position positionsForPosIDValue;
-        protected async Task positionsForPosIDLoadData(LoadDataArgs args)
-        {
-            try
-            {
-                var result = await DevOps_Proj_DatabaseService.GetPositions();
-                positionsForPosID = result.Value.AsODataEnumerable();
-                positionsForPosIDCount = positionsForPosID.Count();
-
-            }
-            catch (System.Exception ex)
-            {
-                NotificationService.Notify(new NotificationMessage(){ Severity = NotificationSeverity.Error, Summary = $"Error", Detail = $"Unable to load Radzen.Design.EntityProperty" });
-            }
-        }
-
-        protected async Task CancelButtonClick(MouseEventArgs args)
-        {
-            NavigationManager.NavigateTo("employees");
-        }
-
-
-
-        protected async Task GridRowUpdate(CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Employee args)
-        {
-            await DevOps_Proj_DatabaseService.UpdateEmployee(args.Emp_ID, args);
-        }
-
-        protected async Task GridRowCreate(CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Employee args)
-        {
-            await DevOps_Proj_DatabaseService.CreateEmployee(args);
-            await grid0.Reload();
-        }
-
-        protected async Task EditButtonClick(MouseEventArgs args, CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Employee data)
-        {
-            await grid0.EditRow(data);
-        }
-
-        protected async Task SaveButtonClick(MouseEventArgs args, CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Employee data)
-        {
-            await grid0.UpdateRow(data);
-        }
-
-        protected async Task CancelButtonClick(MouseEventArgs args, CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Employee data)
-        {
-            grid0.CancelEditRow(data);
-            await grid0.Reload();
         }
     }
 }

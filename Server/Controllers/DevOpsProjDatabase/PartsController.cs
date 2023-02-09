@@ -67,13 +67,17 @@ namespace CloudDevOpsProject1.Server.Controllers.DevOps_Proj_Database
                 }
 
 
-                var item = this.context.Parts
+                var items = this.context.Parts
                     .Where(i => i.Part_ID == key)
-                    .FirstOrDefault();
+                    .AsQueryable();
+
+                items = Data.EntityPatch.ApplyTo<CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Part>(Request, items);
+
+                var item = items.FirstOrDefault();
 
                 if (item == null)
                 {
-                    return BadRequest();
+                    return StatusCode((int)HttpStatusCode.PreconditionFailed);
                 }
                 this.OnPartDeleted(item);
                 this.context.Parts.Remove(item);
@@ -104,16 +108,24 @@ namespace CloudDevOpsProject1.Server.Controllers.DevOps_Proj_Database
                     return BadRequest(ModelState);
                 }
 
-                if (item == null || (item.Part_ID != key))
+                var items = this.context.Parts
+                    .Where(i => i.Part_ID == key)
+                    .AsQueryable();
+
+                items = Data.EntityPatch.ApplyTo<CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Part>(Request, items);
+
+                var firstItem = items.FirstOrDefault();
+
+                if (firstItem == null)
                 {
-                    return BadRequest();
+                    return StatusCode((int)HttpStatusCode.PreconditionFailed);
                 }
                 this.OnPartUpdated(item);
                 this.context.Parts.Update(item);
                 this.context.SaveChanges();
 
                 var itemToReturn = this.context.Parts.Where(i => i.Part_ID == key);
-                Request.QueryString = Request.QueryString.Add("$expand", "Inventory,Vendor");
+                Request.QueryString = Request.QueryString.Add("$expand", "Vendor");
                 this.OnAfterPartUpdated(item);
                 return new ObjectResult(SingleResult.Create(itemToReturn));
             }
@@ -135,11 +147,17 @@ namespace CloudDevOpsProject1.Server.Controllers.DevOps_Proj_Database
                     return BadRequest(ModelState);
                 }
 
-                var item = this.context.Parts.Where(i => i.Part_ID == key).FirstOrDefault();
+                var items = this.context.Parts
+                    .Where(i => i.Part_ID == key)
+                    .AsQueryable();
+
+                items = Data.EntityPatch.ApplyTo<CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Part>(Request, items);
+
+                var item = items.FirstOrDefault();
 
                 if (item == null)
                 {
-                    return BadRequest();
+                    return StatusCode((int)HttpStatusCode.PreconditionFailed);
                 }
                 patch.Patch(item);
 
@@ -148,7 +166,7 @@ namespace CloudDevOpsProject1.Server.Controllers.DevOps_Proj_Database
                 this.context.SaveChanges();
 
                 var itemToReturn = this.context.Parts.Where(i => i.Part_ID == key);
-                Request.QueryString = Request.QueryString.Add("$expand", "Inventory,Vendor");
+                Request.QueryString = Request.QueryString.Add("$expand", "Vendor");
                 return new ObjectResult(SingleResult.Create(itemToReturn));
             }
             catch(Exception ex)
@@ -183,7 +201,7 @@ namespace CloudDevOpsProject1.Server.Controllers.DevOps_Proj_Database
 
                 var itemToReturn = this.context.Parts.Where(i => i.Part_ID == item.Part_ID);
 
-                Request.QueryString = Request.QueryString.Add("$expand", "Inventory,Vendor");
+                Request.QueryString = Request.QueryString.Add("$expand", "Vendor");
 
                 this.OnAfterPartCreated(item);
 

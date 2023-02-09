@@ -10,21 +10,30 @@ namespace CloudDevOpsProject1.Server.Models.DevOps_Proj_Database
     [Table("Parts", Schema = "dbo")]
     public partial class Part
     {
+
+        [NotMapped]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        [JsonPropertyName("@odata.etag")]
+        public string ETag
+        {
+                get;
+                set;
+        }
+
         [Key]
-        [Required]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Part_ID { get; set; }
 
+        [ConcurrencyCheck]
         public string Name { get; set; }
 
+        [ConcurrencyCheck]
         public string Specs { get; set; }
 
+        [ConcurrencyCheck]
         public int? Vendor_ID { get; set; }
 
-        public int? Inv_ID { get; set; }
-
         public ICollection<Inventory> Inventories { get; set; }
-
-        public Inventory Inventory { get; set; }
 
         public Vendor Vendor { get; set; }
 

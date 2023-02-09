@@ -1,4 +1,5 @@
-@page "/inventories"
+@page "/inventories"
+@attribute [Authorize]
 
 <PageTitle>Inventories</PageTitle>
 <div class="row" style="margin-bottom: 1rem">
@@ -12,46 +13,19 @@
 <div class="row">
     <div class="col-md-12">
         <RadzenDataGrid @ref="grid0" ColumnWidth="200px"  AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true"
-            Data="@inventories" Count=count LoadData=@Grid0LoadData RowUpdate=@GridRowUpdate RowCreate=@GridRowCreate TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Inventory" >
+            Data="@inventories" Count=count LoadData=@Grid0LoadData  TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Inventory" RowSelect="@EditRow" >
             <Columns>
-                <RadzenDataGridColumn TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Inventory" Property="Inv_ID" Title="Inv_ID">
-                  <EditTemplate Context="inventory">
-                      <RadzenNumeric style="display: block; width: 100%" @bind-Value="@inventory.Inv_ID" Name="Inv_ID" />
-                      <RadzenRequiredValidator Component="Inv_ID" Text="Inv_ID is required" style="position: absolute" />
-                  </EditTemplate>
+                <RadzenDataGridColumn TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Inventory" Property="Inv_ID" Title="Inv I D">
                 </RadzenDataGridColumn>
                 <RadzenDataGridColumn TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Inventory" Property="Quanity" Title="Quanity">
-                  <EditTemplate Context="inventory">
-                      <RadzenNumeric style="display: block; width: 100%" @bind-Value="@inventory.Quanity" Name="Quanity" />
-                  </EditTemplate>
                 </RadzenDataGridColumn>
                 <RadzenDataGridColumn TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Inventory" Property="Part.Name" Title="Part">
-                  <EditTemplate Context="inventory">
-                        <RadzenDropDown Data="@partsForPartID" TextProperty="Name" ValueProperty="Part_ID"
-                            Placeholder="Choose Part" style="display: block; width: 100%" @bind-Value="@inventory.Part_ID" Name="Part_ID"
-                         Count=@partsForPartIDCount LoadData=@partsForPartIDLoadData />
-                  </EditTemplate>
                 </RadzenDataGridColumn>
                 <RadzenDataGridColumn TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Inventory" Property="Plant.Plant_Name" Title="Plant">
-                  <EditTemplate Context="inventory">
-                        <RadzenDropDown Data="@plantsForPlantID" TextProperty="Plant_Name" ValueProperty="Plant_ID"
-                            Placeholder="Choose Plant" style="display: block; width: 100%" @bind-Value="@inventory.Plant_ID" Name="Plant_ID"
-                         Count=@plantsForPlantIDCount LoadData=@plantsForPlantIDLoadData />
-                  </EditTemplate>
                 </RadzenDataGridColumn>
-                <RadzenDataGridColumn TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Inventory" Filterable="false" Sortable="false" Width="156px" TextAlign="TextAlign.Center">
-                    <EditTemplate Context="inventory">
-                        <RadzenButton Icon="check" ButtonStyle="ButtonStyle.Success" Variant="Variant.Flat" Size="ButtonSize.Medium"
-                            style="margin-top: 0.25rem; margin-right: 0.25rem; margin-bottom: 0.25rem"
-                            Click=@(args => SaveButtonClick(args, inventory)) @onclick:stopPropagation="true" />
-                        <RadzenButton Icon="close" ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat" Size="ButtonSize.Medium"
-                            Click=@(args => CancelButtonClick(args, inventory)) @onclick:stopPropagation="true" />
-                    </EditTemplate>
+                <RadzenDataGridColumn TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Inventory" Filterable="false" Sortable="false" Width="70px" TextAlign="TextAlign.Center">
                     <Template Context="inventory">
 
-                        <RadzenButton Icon="edit" ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat" Size="ButtonSize.Medium"
-                            style="margin-top: 0.25rem; margin-right: 0.25rem; margin-bottom: 0.25rem"
-                            Click=@(args => EditButtonClick(args, inventory)) @onclick:stopPropagation="true" />
                         <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
                             Shade="Shade.Lighter" Variant="Variant.Flat"
                             Click=@(args => GridDeleteButtonClick(args, inventory)) @onclick:stopPropagation="true" />

@@ -52,6 +52,9 @@ namespace CloudDevOpsProject1.Server
         {
             var items = Context.Employees.AsQueryable();
 
+            items = items.Include(i => i.Plant);
+            items = items.Include(i => i.Position);
+
             if (query != null)
             {
                 if (!string.IsNullOrEmpty(query.Expand))
@@ -104,8 +107,8 @@ namespace CloudDevOpsProject1.Server
                               .AsNoTracking()
                               .Where(i => i.Emp_ID == empid);
 
-                items = items.Include(i => i.Plant);
-                items = items.Include(i => i.Position);
+            items = items.Include(i => i.Plant);
+            items = items.Include(i => i.Position);
   
             var itemToReturn = items.FirstOrDefault();
 
@@ -235,6 +238,9 @@ namespace CloudDevOpsProject1.Server
         {
             var items = Context.Inventories.AsQueryable();
 
+            items = items.Include(i => i.Part);
+            items = items.Include(i => i.Plant);
+
             if (query != null)
             {
                 if (!string.IsNullOrEmpty(query.Expand))
@@ -287,8 +293,8 @@ namespace CloudDevOpsProject1.Server
                               .AsNoTracking()
                               .Where(i => i.Inv_ID == invid);
 
-                items = items.Include(i => i.Part);
-                items = items.Include(i => i.Plant);
+            items = items.Include(i => i.Part);
+            items = items.Include(i => i.Plant);
   
             var itemToReturn = items.FirstOrDefault();
 
@@ -418,6 +424,9 @@ namespace CloudDevOpsProject1.Server
         {
             var items = Context.Managers.AsQueryable();
 
+            items = items.Include(i => i.Employee);
+            items = items.Include(i => i.Plant);
+
             if (query != null)
             {
                 if (!string.IsNullOrEmpty(query.Expand))
@@ -470,8 +479,8 @@ namespace CloudDevOpsProject1.Server
                               .AsNoTracking()
                               .Where(i => i.Manager_ID == managerid);
 
-                items = items.Include(i => i.Employee);
-                items = items.Include(i => i.Plant);
+            items = items.Include(i => i.Employee);
+            items = items.Include(i => i.Plant);
   
             var itemToReturn = items.FirstOrDefault();
 
@@ -601,6 +610,8 @@ namespace CloudDevOpsProject1.Server
         {
             var items = Context.Parts.AsQueryable();
 
+            items = items.Include(i => i.Vendor);
+
             if (query != null)
             {
                 if (!string.IsNullOrEmpty(query.Expand))
@@ -653,8 +664,7 @@ namespace CloudDevOpsProject1.Server
                               .AsNoTracking()
                               .Where(i => i.Part_ID == partid);
 
-                items = items.Include(i => i.Inventory);
-                items = items.Include(i => i.Vendor);
+            items = items.Include(i => i.Vendor);
   
             var itemToReturn = items.FirstOrDefault();
 
@@ -784,6 +794,8 @@ namespace CloudDevOpsProject1.Server
         {
             var items = Context.Plants.AsQueryable();
 
+            items = items.Include(i => i.Manager);
+
             if (query != null)
             {
                 if (!string.IsNullOrEmpty(query.Expand))
@@ -836,7 +848,7 @@ namespace CloudDevOpsProject1.Server
                               .AsNoTracking()
                               .Where(i => i.Plant_ID == plantid);
 
-                items = items.Include(i => i.Manager);
+            items = items.Include(i => i.Manager);
   
             var itemToReturn = items.FirstOrDefault();
 
@@ -965,6 +977,7 @@ namespace CloudDevOpsProject1.Server
         public async Task<IQueryable<CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Position>> GetPositions(Query query = null)
         {
             var items = Context.Positions.AsQueryable();
+
 
             if (query != null)
             {
@@ -1147,6 +1160,7 @@ namespace CloudDevOpsProject1.Server
         {
             var items = Context.TestTables.AsQueryable();
 
+
             if (query != null)
             {
                 if (!string.IsNullOrEmpty(query.Expand))
@@ -1328,6 +1342,7 @@ namespace CloudDevOpsProject1.Server
         {
             var items = Context.TestTable2S.AsQueryable();
 
+
             if (query != null)
             {
                 if (!string.IsNullOrEmpty(query.Expand))
@@ -1508,6 +1523,7 @@ namespace CloudDevOpsProject1.Server
         public async Task<IQueryable<CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Vendor>> GetVendors(Query query = null)
         {
             var items = Context.Vendors.AsQueryable();
+
 
             if (query != null)
             {

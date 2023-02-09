@@ -38,11 +38,14 @@ namespace CloudDevOpsProject1.Client.Pages
         protected RadzenDataGrid<CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Part> grid0;
         protected int count;
 
+        [Inject]
+        protected SecurityService Security { get; set; }
+
         protected async Task Grid0LoadData(LoadDataArgs args)
         {
             try
             {
-                var result = await DevOps_Proj_DatabaseService.GetParts(filter: $"{args.Filter}", expand: "Inventory,Vendor", orderby: $"{args.OrderBy}", top: args.Top, skip: args.Skip, count:args.Top != null && args.Skip != null);
+                var result = await DevOps_Proj_DatabaseService.GetParts(filter: $"{args.Filter}", expand: "Vendor", orderby: $"{args.OrderBy}", top: args.Top, skip: args.Skip, count:args.Top != null && args.Skip != null);
                 parts = result.Value.AsODataEnumerable();
                 count = result.Count;
             }
@@ -54,7 +57,14 @@ namespace CloudDevOpsProject1.Client.Pages
 
         protected async Task AddButtonClick(MouseEventArgs args)
         {
-            await grid0.InsertRow(new CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Part());
+            await DialogService.OpenAsync<AddPart>("Add Part", null);
+            await grid0.Reload();
+        }
+
+        protected async Task EditRow(CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Part args)
+        {
+            await DialogService.OpenAsync<EditPart>("Edit Part", new Dictionary<string, object> { {"Part_ID", args.Part_ID} });
+            await grid0.Reload();
         }
 
         protected async Task GridDeleteButtonClick(MouseEventArgs args, CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Part part)
@@ -80,81 +90,6 @@ namespace CloudDevOpsProject1.Client.Pages
                     Detail = $"Unable to delete Part" 
                 });
             }
-        }
-        protected bool errorVisible;
-        protected CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Part part;
-
-        protected IEnumerable<CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Inventory> inventoriesForInvID;
-
-        protected IEnumerable<CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Vendor> vendorsForVendorID;
-
-
-        protected int inventoriesForInvIDCount;
-        protected CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Inventory inventoriesForInvIDValue;
-        protected async Task inventoriesForInvIDLoadData(LoadDataArgs args)
-        {
-            try
-            {
-                var result = await DevOps_Proj_DatabaseService.GetInventories();
-                inventoriesForInvID = result.Value.AsODataEnumerable();
-                inventoriesForInvIDCount = inventoriesForInvID.Count();
-
-            }
-            catch (System.Exception ex)
-            {
-                NotificationService.Notify(new NotificationMessage(){ Severity = NotificationSeverity.Error, Summary = $"Error", Detail = $"Unable to load Radzen.Design.EntityProperty" });
-            }
-        }
-
-        protected int vendorsForVendorIDCount;
-        protected CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Vendor vendorsForVendorIDValue;
-        protected async Task vendorsForVendorIDLoadData(LoadDataArgs args)
-        {
-            try
-            {
-                var result = await DevOps_Proj_DatabaseService.GetVendors();
-                vendorsForVendorID = result.Value.AsODataEnumerable();
-                vendorsForVendorIDCount = vendorsForVendorID.Count();
-
-            }
-            catch (System.Exception ex)
-            {
-                NotificationService.Notify(new NotificationMessage(){ Severity = NotificationSeverity.Error, Summary = $"Error", Detail = $"Unable to load Radzen.Design.EntityProperty" });
-            }
-        }
-
-        protected async Task CancelButtonClick(MouseEventArgs args)
-        {
-            NavigationManager.NavigateTo("parts");
-        }
-
-
-
-        protected async Task GridRowUpdate(CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Part args)
-        {
-            await DevOps_Proj_DatabaseService.UpdatePart(args.Part_ID, args);
-        }
-
-        protected async Task GridRowCreate(CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Part args)
-        {
-            await DevOps_Proj_DatabaseService.CreatePart(args);
-            await grid0.Reload();
-        }
-
-        protected async Task EditButtonClick(MouseEventArgs args, CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Part data)
-        {
-            await grid0.EditRow(data);
-        }
-
-        protected async Task SaveButtonClick(MouseEventArgs args, CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Part data)
-        {
-            await grid0.UpdateRow(data);
-        }
-
-        protected async Task CancelButtonClick(MouseEventArgs args, CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Part data)
-        {
-            grid0.CancelEditRow(data);
-            await grid0.Reload();
         }
     }
 }

@@ -117,6 +117,7 @@ namespace CloudDevOpsProject1.Client
 
             var httpRequestMessage = new HttpRequestMessage(HttpMethod.Patch, uri);
 
+            httpRequestMessage.Headers.Add("If-Match", employee.ETag);    
 
             httpRequestMessage.Content = new StringContent(Radzen.ODataJsonSerializer.Serialize(employee), Encoding.UTF8, "application/json");
 
@@ -211,6 +212,7 @@ namespace CloudDevOpsProject1.Client
 
             var httpRequestMessage = new HttpRequestMessage(HttpMethod.Patch, uri);
 
+            httpRequestMessage.Headers.Add("If-Match", inventory.ETag);    
 
             httpRequestMessage.Content = new StringContent(Radzen.ODataJsonSerializer.Serialize(inventory), Encoding.UTF8, "application/json");
 
@@ -305,6 +307,7 @@ namespace CloudDevOpsProject1.Client
 
             var httpRequestMessage = new HttpRequestMessage(HttpMethod.Patch, uri);
 
+            httpRequestMessage.Headers.Add("If-Match", manager.ETag);    
 
             httpRequestMessage.Content = new StringContent(Radzen.ODataJsonSerializer.Serialize(manager), Encoding.UTF8, "application/json");
 
@@ -399,6 +402,7 @@ namespace CloudDevOpsProject1.Client
 
             var httpRequestMessage = new HttpRequestMessage(HttpMethod.Patch, uri);
 
+            httpRequestMessage.Headers.Add("If-Match", part.ETag);    
 
             httpRequestMessage.Content = new StringContent(Radzen.ODataJsonSerializer.Serialize(part), Encoding.UTF8, "application/json");
 
@@ -493,6 +497,7 @@ namespace CloudDevOpsProject1.Client
 
             var httpRequestMessage = new HttpRequestMessage(HttpMethod.Patch, uri);
 
+            httpRequestMessage.Headers.Add("If-Match", plant.ETag);    
 
             httpRequestMessage.Content = new StringContent(Radzen.ODataJsonSerializer.Serialize(plant), Encoding.UTF8, "application/json");
 
@@ -587,6 +592,7 @@ namespace CloudDevOpsProject1.Client
 
             var httpRequestMessage = new HttpRequestMessage(HttpMethod.Patch, uri);
 
+            httpRequestMessage.Headers.Add("If-Match", position.ETag);    
 
             httpRequestMessage.Content = new StringContent(Radzen.ODataJsonSerializer.Serialize(position), Encoding.UTF8, "application/json");
 
@@ -681,6 +687,7 @@ namespace CloudDevOpsProject1.Client
 
             var httpRequestMessage = new HttpRequestMessage(HttpMethod.Patch, uri);
 
+            httpRequestMessage.Headers.Add("If-Match", testTable.ETag);    
 
             httpRequestMessage.Content = new StringContent(Radzen.ODataJsonSerializer.Serialize(testTable), Encoding.UTF8, "application/json");
 
@@ -775,6 +782,7 @@ namespace CloudDevOpsProject1.Client
 
             var httpRequestMessage = new HttpRequestMessage(HttpMethod.Patch, uri);
 
+            httpRequestMessage.Headers.Add("If-Match", testTable2.ETag);    
 
             httpRequestMessage.Content = new StringContent(Radzen.ODataJsonSerializer.Serialize(testTable2), Encoding.UTF8, "application/json");
 
@@ -869,6 +877,7 @@ namespace CloudDevOpsProject1.Client
 
             var httpRequestMessage = new HttpRequestMessage(HttpMethod.Patch, uri);
 
+            httpRequestMessage.Headers.Add("If-Match", vendor.ETag);    
 
             httpRequestMessage.Content = new StringContent(Radzen.ODataJsonSerializer.Serialize(vendor), Encoding.UTF8, "application/json");
 

@@ -38,6 +38,9 @@ namespace CloudDevOpsProject1.Client.Pages
         protected RadzenDataGrid<CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.TestTable2> grid0;
         protected int count;
 
+        [Inject]
+        protected SecurityService Security { get; set; }
+
         protected async Task Grid0LoadData(LoadDataArgs args)
         {
             try
@@ -54,7 +57,14 @@ namespace CloudDevOpsProject1.Client.Pages
 
         protected async Task AddButtonClick(MouseEventArgs args)
         {
-            await grid0.InsertRow(new CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.TestTable2());
+            await DialogService.OpenAsync<AddTestTable2>("Add TestTable2", null);
+            await grid0.Reload();
+        }
+
+        protected async Task EditRow(CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.TestTable2 args)
+        {
+            await DialogService.OpenAsync<EditTestTable2>("Edit TestTable2", new Dictionary<string, object> { {"NateIsGay", args.NateIsGay} });
+            await grid0.Reload();
         }
 
         protected async Task GridDeleteButtonClick(MouseEventArgs args, CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.TestTable2 testTable2)
@@ -80,43 +90,6 @@ namespace CloudDevOpsProject1.Client.Pages
                     Detail = $"Unable to delete TestTable2" 
                 });
             }
-        }
-        protected bool errorVisible;
-        protected CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.TestTable2 testTable2;
-
-
-        protected async Task CancelButtonClick(MouseEventArgs args)
-        {
-            NavigationManager.NavigateTo("test-table2-s");
-        }
-
-
-
-        protected async Task GridRowUpdate(CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.TestTable2 args)
-        {
-            await DevOps_Proj_DatabaseService.UpdateTestTable2(args.NateIsGay, args);
-        }
-
-        protected async Task GridRowCreate(CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.TestTable2 args)
-        {
-            await DevOps_Proj_DatabaseService.CreateTestTable2(args);
-            await grid0.Reload();
-        }
-
-        protected async Task EditButtonClick(MouseEventArgs args, CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.TestTable2 data)
-        {
-            await grid0.EditRow(data);
-        }
-
-        protected async Task SaveButtonClick(MouseEventArgs args, CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.TestTable2 data)
-        {
-            await grid0.UpdateRow(data);
-        }
-
-        protected async Task CancelButtonClick(MouseEventArgs args, CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.TestTable2 data)
-        {
-            grid0.CancelEditRow(data);
-            await grid0.Reload();
         }
     }
 }

@@ -38,6 +38,9 @@ namespace CloudDevOpsProject1.Client.Pages
         protected RadzenDataGrid<CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Manager> grid0;
         protected int count;
 
+        [Inject]
+        protected SecurityService Security { get; set; }
+
         protected async Task Grid0LoadData(LoadDataArgs args)
         {
             try
@@ -54,7 +57,14 @@ namespace CloudDevOpsProject1.Client.Pages
 
         protected async Task AddButtonClick(MouseEventArgs args)
         {
-            await grid0.InsertRow(new CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Manager());
+            await DialogService.OpenAsync<AddManager>("Add Manager", null);
+            await grid0.Reload();
+        }
+
+        protected async Task EditRow(CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Manager args)
+        {
+            await DialogService.OpenAsync<EditManager>("Edit Manager", new Dictionary<string, object> { {"Manager_ID", args.Manager_ID} });
+            await grid0.Reload();
         }
 
         protected async Task GridDeleteButtonClick(MouseEventArgs args, CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Manager manager)
@@ -80,81 +90,6 @@ namespace CloudDevOpsProject1.Client.Pages
                     Detail = $"Unable to delete Manager" 
                 });
             }
-        }
-        protected bool errorVisible;
-        protected CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Manager manager;
-
-        protected IEnumerable<CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Employee> employeesForEmpID;
-
-        protected IEnumerable<CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Plant> plantsForPlantID;
-
-
-        protected int employeesForEmpIDCount;
-        protected CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Employee employeesForEmpIDValue;
-        protected async Task employeesForEmpIDLoadData(LoadDataArgs args)
-        {
-            try
-            {
-                var result = await DevOps_Proj_DatabaseService.GetEmployees();
-                employeesForEmpID = result.Value.AsODataEnumerable();
-                employeesForEmpIDCount = employeesForEmpID.Count();
-
-            }
-            catch (System.Exception ex)
-            {
-                NotificationService.Notify(new NotificationMessage(){ Severity = NotificationSeverity.Error, Summary = $"Error", Detail = $"Unable to load Radzen.Design.EntityProperty" });
-            }
-        }
-
-        protected int plantsForPlantIDCount;
-        protected CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Plant plantsForPlantIDValue;
-        protected async Task plantsForPlantIDLoadData(LoadDataArgs args)
-        {
-            try
-            {
-                var result = await DevOps_Proj_DatabaseService.GetPlants();
-                plantsForPlantID = result.Value.AsODataEnumerable();
-                plantsForPlantIDCount = plantsForPlantID.Count();
-
-            }
-            catch (System.Exception ex)
-            {
-                NotificationService.Notify(new NotificationMessage(){ Severity = NotificationSeverity.Error, Summary = $"Error", Detail = $"Unable to load Radzen.Design.EntityProperty" });
-            }
-        }
-
-        protected async Task CancelButtonClick(MouseEventArgs args)
-        {
-            NavigationManager.NavigateTo("managers");
-        }
-
-
-
-        protected async Task GridRowUpdate(CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Manager args)
-        {
-            await DevOps_Proj_DatabaseService.UpdateManager(args.Manager_ID, args);
-        }
-
-        protected async Task GridRowCreate(CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Manager args)
-        {
-            await DevOps_Proj_DatabaseService.CreateManager(args);
-            await grid0.Reload();
-        }
-
-        protected async Task EditButtonClick(MouseEventArgs args, CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Manager data)
-        {
-            await grid0.EditRow(data);
-        }
-
-        protected async Task SaveButtonClick(MouseEventArgs args, CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Manager data)
-        {
-            await grid0.UpdateRow(data);
-        }
-
-        protected async Task CancelButtonClick(MouseEventArgs args, CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Manager data)
-        {
-            grid0.CancelEditRow(data);
-            await grid0.Reload();
         }
     }
 }

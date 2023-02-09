@@ -60,12 +60,6 @@ namespace CloudDevOpsProject1.Server.Data
               .HasPrincipalKey(i => i.Plant_ID);
 
             builder.Entity<CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Part>()
-              .HasOne(i => i.Inventory)
-              .WithMany(i => i.Parts)
-              .HasForeignKey(i => i.Inv_ID)
-              .HasPrincipalKey(i => i.Inv_ID);
-
-            builder.Entity<CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Part>()
               .HasOne(i => i.Vendor)
               .WithMany(i => i.Parts)
               .HasForeignKey(i => i.Vendor_ID)

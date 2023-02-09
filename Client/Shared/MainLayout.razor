@@ -12,6 +12,18 @@
                     <RadzenSidebarToggle Click="@SidebarToggleClick"></RadzenSidebarToggle>
                 </div>
                 <div class="col-6 d-flex align-items-center justify-content-end pr-0 pe-0">
+                    <RadzenProfileMenu Visible="@Security.IsAuthenticated()" Click="@ProfileMenuClick">
+                        <ChildContent>
+                            <RadzenProfileMenuItem Path="profile" Icon="settings" Text="Profile" />
+                            <RadzenProfileMenuItem Path="application-users" Icon="person" Text="Users" />
+                            <RadzenProfileMenuItem Path="application-roles" Icon="security" Text="Roles" />
+                            <RadzenProfileMenuItem Text="Logout" Value="Logout" Icon="power_settings_new" />
+                        </ChildContent>
+                        <Template>
+                            @Security.User?.Name
+                            <RadzenGravatar Email="@Security.User?.Name" />
+                        </Template>
+                    </RadzenProfileMenu>
                 </div>
             </div>
         </div>
@@ -30,7 +42,7 @@
             <svg width="48" height="48" viewBox="0 0 64 64">
                 <use href="/images/logo.svg#logo"></use>
             </svg>
-            <RadzenText Text="Cloud DevOps Project 1" TextStyle="Radzen.Blazor.TextStyle.Subtitle1" class="mb-0" style="color: var(--rz-primary-light);" />
+            <RadzenText Text="CloudDevOpsProject1" TextStyle="Radzen.Blazor.TextStyle.Subtitle1" class="mb-0" style="color: var(--rz-primary-light);" />
         </div>
         <RadzenPanelMenu>
             <RadzenPanelMenuItem Text="Home" Path="/" />
@@ -45,7 +57,7 @@
             <RadzenPanelMenuItem Text="Vendors" Path="vendors" />
         </RadzenPanelMenu>
         <div class="py-3 py-md-4" style="padding: var(--rz-panel-menu-item-padding);">
-            <RadzenText Text="Cloud DevOps Project 1 v1.0.0" TextStyle="Radzen.Blazor.TextStyle.Caption" style="color: var(--rz-text-disabled-color);" TagName="Radzen.Blazor.TagName.P" TextAlign="Radzen.TextAlign.Center" />
+            <RadzenText Text="CloudDevOpsProject1 v1.0.0" TextStyle="Radzen.Blazor.TextStyle.Caption" style="color: var(--rz-text-disabled-color);" TagName="Radzen.Blazor.TagName.P" TextAlign="Radzen.TextAlign.Center" />
             <RadzenText Text="Copyright Ⓒ 2023" TextStyle="Radzen.Blazor.TextStyle.Caption" class="mb-0" style="color: var(--rz-text-disabled-color);" TagName="Radzen.Blazor.TagName.P" TextAlign="Radzen.TextAlign.Center" />
         </div>
     </RadzenSidebar>

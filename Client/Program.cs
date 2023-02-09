@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Radzen;
 using CloudDevOpsProject1.Client;
+using Microsoft.AspNetCore.Components.Authorization;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.Services.AddScoped<DialogService>();
@@ -10,5 +11,10 @@ builder.Services.AddScoped<TooltipService>();
 builder.Services.AddScoped<ContextMenuService>();
 builder.Services.AddTransient(sp => new HttpClient{BaseAddress = new Uri(builder.HostEnvironment.BaseAddress)});
 builder.Services.AddScoped<CloudDevOpsProject1.Client.DevOps_Proj_DatabaseService>();
+builder.Services.AddAuthorizationCore();
+builder.Services.AddHttpClient("CloudDevOpsProject1.Server", client => client.BaseAddress = new Uri(builder.HostEnvironment.BaseAddress));
+builder.Services.AddTransient(sp => sp.GetRequiredService<IHttpClientFactory>().CreateClient("CloudDevOpsProject1.Server"));
+builder.Services.AddScoped<CloudDevOpsProject1.Client.SecurityService>();
+builder.Services.AddScoped<AuthenticationStateProvider, CloudDevOpsProject1.Client.ApplicationAuthenticationStateProvider>();
 var host = builder.Build();
 await host.RunAsync();

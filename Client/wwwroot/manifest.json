@@ -1,6 +1,6 @@
 {
-  "name": "Cloud DevOps Project 1",
-  "short_name": "Cloud DevOps Project 1",
+  "name": "CloudDevOpsProject1",
+  "short_name": "CloudDevOpsProject1",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",

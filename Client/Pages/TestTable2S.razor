@@ -1,4 +1,5 @@
-@page "/test-table2-s"
+@page "/test-table2-s"
+@attribute [Authorize]
 
 <PageTitle>TestTable2S</PageTitle>
 <div class="row" style="margin-bottom: 1rem">
@@ -12,27 +13,13 @@
 <div class="row">
     <div class="col-md-12">
         <RadzenDataGrid @ref="grid0" ColumnWidth="200px"  AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true"
-            Data="@testTable2S" Count=count LoadData=@Grid0LoadData RowUpdate=@GridRowUpdate RowCreate=@GridRowCreate TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.TestTable2" >
+            Data="@testTable2S" Count=count LoadData=@Grid0LoadData  TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.TestTable2" RowSelect="@EditRow" >
             <Columns>
-                <RadzenDataGridColumn TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.TestTable2" Property="NateIsGay" Title="NateIsGay">
-                  <EditTemplate Context="testTable2">
-                      <RadzenTextBox style="display: block; width: 100%" @bind-Value="@testTable2.NateIsGay" Name="NateIsGay" />
-                      <RadzenRequiredValidator Component="NateIsGay" Text="NateIsGay is required" style="position: absolute" />
-                  </EditTemplate>
+                <RadzenDataGridColumn TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.TestTable2" Property="NateIsGay" Title="Nate Is Gay">
                 </RadzenDataGridColumn>
-                <RadzenDataGridColumn TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.TestTable2" Filterable="false" Sortable="false" Width="156px" TextAlign="TextAlign.Center">
-                    <EditTemplate Context="testTable2">
-                        <RadzenButton Icon="check" ButtonStyle="ButtonStyle.Success" Variant="Variant.Flat" Size="ButtonSize.Medium"
-                            style="margin-top: 0.25rem; margin-right: 0.25rem; margin-bottom: 0.25rem"
-                            Click=@(args => SaveButtonClick(args, testTable2)) @onclick:stopPropagation="true" />
-                        <RadzenButton Icon="close" ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat" Size="ButtonSize.Medium"
-                            Click=@(args => CancelButtonClick(args, testTable2)) @onclick:stopPropagation="true" />
-                    </EditTemplate>
+                <RadzenDataGridColumn TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.TestTable2" Filterable="false" Sortable="false" Width="70px" TextAlign="TextAlign.Center">
                     <Template Context="testTable2">
 
-                        <RadzenButton Icon="edit" ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat" Size="ButtonSize.Medium"
-                            style="margin-top: 0.25rem; margin-right: 0.25rem; margin-bottom: 0.25rem"
-                            Click=@(args => EditButtonClick(args, testTable2)) @onclick:stopPropagation="true" />
                         <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
                             Shade="Shade.Lighter" Variant="Variant.Flat"
                             Click=@(args => GridDeleteButtonClick(args, testTable2)) @onclick:stopPropagation="true" />
