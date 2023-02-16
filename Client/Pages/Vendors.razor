@@ -1,0 +1,37 @@
+@page "/vendors"
+@attribute [Authorize]
+
+<PageTitle>Vendors</PageTitle>
+<div class="row" style="margin-bottom: 1rem">
+    <div class="col-12 col-md-6">
+        <RadzenText Text="Vendors" TextStyle="TextStyle.H3" TagName="TagName.H1" style="margin: 0" />
+    </div>
+    <div class="col-12 col-md-6 justify-content-start justify-content-md-end" style="display: flex; align-items: center; flex-wrap: wrap; gap: 0.5rem">
+    <RadzenButton Icon="add_circle_outline" style="margin-bottom: 10px" Text="Add" Click="@AddButtonClick" Variant="Variant.Flat" />
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <RadzenDataGrid @ref="grid0" ColumnWidth="200px"  AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true"
+            Data="@vendors" Count=count LoadData=@Grid0LoadData  TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Vendor" RowSelect="@EditRow" >
+            <Columns>
+                <RadzenDataGridColumn TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Vendor" Property="Vendor_ID" Title="Vendor I D">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Vendor" Property="Ven_Name" Title="Ven Name">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Vendor" Property="Ven_Phone" Title="Ven Phone">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Vendor" Property="Ven_Address" Title="Ven Address">
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Vendor" Filterable="false" Sortable="false" Width="70px" TextAlign="TextAlign.Center">
+                    <Template Context="vendor">
+
+                        <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
+                            Shade="Shade.Lighter" Variant="Variant.Flat"
+                            Click=@(args => GridDeleteButtonClick(args, vendor)) @onclick:stopPropagation="true" />
+                    </Template>
+                </RadzenDataGridColumn>
+            </Columns>
+        </RadzenDataGrid>
+    </div>
+</div>

@@ -1,0 +1,60 @@
+@page "/add-employee"
+@attribute [Authorize]
+
+<PageTitle>Add Employee</PageTitle>
+    <div class="col-md-12">
+        <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@errorVisible">Cannot save Employee</RadzenAlert>
+        <RadzenTemplateForm TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Employee" Data="@employee" Visible="@(employee != null && canEdit)" Submit="@FormSubmit">
+            <div style="margin-bottom: 1rem" class="row">
+                <div class="col-md-3">
+                    <RadzenLabel Text="Emp Name" Component="Emp_Name" style="width: 100%" />
+                </div>
+                <div class="col-md-9">
+                    <RadzenTextBox style="display: block; width: 100%" @bind-Value="@employee.Emp_Name" Name="Emp_Name" />
+                </div>
+            </div>
+            <div style="margin-bottom: 1rem" class="row">
+                <div class="col-md-3">
+                    <RadzenLabel Text="Emp Address" Component="Emp_Address" style="width: 100%" />
+                </div>
+                <div class="col-md-9">
+                    <RadzenTextBox style="display: block; width: 100%" @bind-Value="@employee.Emp_Address" Name="Emp_Address" />
+                </div>
+            </div>
+            <div style="margin-bottom: 1rem" class="row">
+                <div class="col-md-3">
+                    <RadzenLabel Text="Emp Phone" Component="Emp_Phone" style="width: 100%" />
+                </div>
+                <div class="col-md-9">
+                    <RadzenTextBox style="display: block; width: 100%" @bind-Value="@employee.Emp_Phone" Name="Emp_Phone" />
+                </div>
+            </div>
+            <div style="margin-bottom: 1rem" class="row">
+                <div class="col-md-3">
+                    <RadzenLabel Text="Plant" Component="Plant" style="width: 100%" />
+                </div>
+                <div class="col-md-9">
+                    <RadzenDropDown Data="@plantsForPlantID" TextProperty="Plant_Name" ValueProperty="Plant_ID"
+                         Placeholder="Choose Plant" style="display: block; width: 100%" @bind-Value="@employee.Plant_ID" Name="Plant_ID"
+                         Count=@plantsForPlantIDCount LoadData=@plantsForPlantIDLoadData />
+                </div>
+            </div>
+            <div style="margin-bottom: 1rem" class="row">
+                <div class="col-md-3">
+                    <RadzenLabel Text="Position" Component="Position" style="width: 100%" />
+                </div>
+                <div class="col-md-9">
+                    <RadzenDropDown Data="@positionsForPosID" TextProperty="Pos_Name" ValueProperty="Pos_ID"
+                         Placeholder="Choose Position" style="display: block; width: 100%" @bind-Value="@employee.Pos_ID" Name="Pos_ID"
+                         Count=@positionsForPosIDCount LoadData=@positionsForPosIDLoadData />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col d-flex justify-content-end" style="margin-top: 1rem">
+                    <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Save" Style="margin-right: 0.5rem" Variant="Variant.Flat" />
+                    <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Cancel" Variant="Variant.Flat" Click="@CancelButtonClick"  />
+                </div>
+            </div>
+        </RadzenTemplateForm>
+    </div>
+
