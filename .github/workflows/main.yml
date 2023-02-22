@@ -46,10 +46,10 @@ jobs:
         run: dotnet publish ./CloudDevOpsProject1.sln --configuration Release --no-build
 
       - name: Upload artifact for deployment job
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
           name: .net-app
-          path: ./CloudDevOpsProject1.sln
+          path: ./Client/obj/Release/net7.0
 
   deploy:
     runs-on: windows-latest
@@ -60,13 +60,13 @@ jobs:
 
     steps:
       - name: Download artifact from build job
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v2
         with:
           name: .net-app
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
-        uses: azure/webapps-deploy@v3
+        uses: azure/webapps-deploy@v2
         with:
           app-name: 'devops-proj'
           slot-name: 'Production'
