@@ -43,7 +43,7 @@ jobs:
         run: dotnet build --configuration Release 
 
       - name: dotnet publish
-        run: dotnet publish ./CloudDevOpsProj1.sln --configuration Release --no-build
+        run: dotnet publish ./CloudDevOpsProject1.sln --configuration Release --no-build
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
