@@ -10,7 +10,7 @@
 name: Build and deploy ASP.Net Core app to an Azure Web App
 
 env:
-  AZURE_WEBAPP_NAME: devops-proj.azurewebsites.net   # set this to your application's name
+  AZURE_WEBAPP_NAME: devops-proj   # set this to your application's name
   AZURE_WEBAPP_PACKAGE_PATH: 'CloudDevOpsProject1.sln'      # set this to the path to your web app project, defaults to the repository root
   DOTNET_VERSION: '7'                 # set this to the .NET Core version to use
 
@@ -43,13 +43,13 @@ jobs:
         run: dotnet build --configuration Release
 
       - name: dotnet publish
-        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/devops_proj
+        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
         with:
           name: .net-app
-          path: ${{env.DOTNET_ROOT}}/devops_proj
+          path: ${{env.DOTNET_ROOT}}/myapp
 
   deploy:
     runs-on: windows-latest
