@@ -39,11 +39,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nuget-
 
-      - name: Build with dotnet
-        run: dotnet build --configuration Release 
-
-      - name: dotnet publish
-        run: dotnet publish ./CloudDevOpsProject1.sln --configuration Release --no-build
+      - name: Build with dotnet and publish
+        run: |
+          dotnet restore
+          dotnet build --configuration Release 
+          dotnet publish ./CloudDevOpsProject1.sln --configuration Release
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
