@@ -11,7 +11,7 @@ name: Build and deploy ASP.Net Core app to an Azure Web App
 
 env:
   AZURE_WEBAPP_NAME: devops-proj   # set this to your application's name
-  AZURE_WEBAPP_PACKAGE_PATH: './publish'      # set this to the path to your web app project, defaults to the repository root
+  AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root
   DOTNET_VERSION: '7'                 # set this to the .NET Core version to use
 
 on:
@@ -43,7 +43,7 @@ jobs:
         run: |
           dotnet restore ./CloudDevOpsProject1.sln
           dotnet build --configuration Release ./CloudDevOpsProject1.sln
-          dotnet publish ./CloudDevOpsProject1.sln --configuration Release
+          dotnet publish ./CloudDevOpsProject1.sln --configuration Release --no-build --output '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}'
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
