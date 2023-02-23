@@ -43,7 +43,7 @@ jobs:
         run: |
           dotnet restore ./CloudDevOpsProject1.sln
           dotnet build ./CloudDevOpsProject1.sln --configuration Release --no-restore
-          dotnet publish ./CloudDevOpsProject1.sln --configuration Release --no-build --output '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}'
+          dotnet publish ./CloudDevOpsProject1.sln --configuration Release --no-build
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
