@@ -47,7 +47,7 @@ jobs:
           
       - name: Moving the published app
         run: |
-          cp -r ./Client/bin/Release/net7.0/publish/ ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+          cp -r ./Server/bin/Release/net7.0/publish/ ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
