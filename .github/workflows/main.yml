@@ -48,7 +48,7 @@ jobs:
       - name: Moving the published app
         run: |
           ls
-          cp ./CloudDevOpsProject1/bin/Release/net7.0/publish/ ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+          cp /home/runner/work/Cloud-DevOps-Fundamentals-Project-1/Cloud-DevOps-Fundamentals-Project-1/Client/bin/Release/net7.0/publish/ ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
