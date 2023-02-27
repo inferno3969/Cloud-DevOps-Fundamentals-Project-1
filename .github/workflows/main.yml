@@ -21,7 +21,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
@@ -45,16 +45,9 @@ jobs:
           dotnet build ./CloudDevOpsProject1.sln --configuration Release --no-restore
           dotnet publish ./CloudDevOpsProject1.sln -c Release
           
-      - name: Upload artifact for deployment job
-        uses: actions/upload-artifact@v2
-        with:
-          name: .net-app
-          path: ./publish
-          
-      - name: Download artifact from build job
-        uses: actions/download-artifact@v2
-        with:
-          name: .net-app
+      - name: Moving the published app
+        run: |
+          cp ./bin/Release/net7.0/publish/ ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
