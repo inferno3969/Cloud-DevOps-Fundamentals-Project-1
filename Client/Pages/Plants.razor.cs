@@ -11,8 +11,8 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace CloudDevOpsProject1.Client.Pages
 {
-    [Authorize(Roles="Administrator,Manager,Employee")]
-     
+    [Authorize(Roles="Administrator")]
+
     public partial class Plants
     {
         [Inject]
