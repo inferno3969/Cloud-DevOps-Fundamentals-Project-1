@@ -1,5 +1,6 @@
-@page "/edit-inventory"
-@attribute [Authorize]
+@page "/edit-inventory"
+
+@attribute [Authorize(Roles="Employee,Manager")]
 
 <PageTitle>Edit Inventory</PageTitle>
 <div  class="row">

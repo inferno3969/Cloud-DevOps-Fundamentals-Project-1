@@ -1,5 +1,6 @@
-@page "/managers"
-@attribute [Authorize]
+@page "/managers"
+
+@attribute [Authorize(Roles="Employee,Manager,Administrator")]
 
 <PageTitle>Managers</PageTitle>
 <div class="row" style="margin-bottom: 1rem">

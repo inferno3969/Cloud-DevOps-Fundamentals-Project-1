@@ -1,5 +1,6 @@
-@page "/edit-plant"
-@attribute [Authorize]
+@page "/edit-plant"
+
+@attribute [Authorize(Roles="Administrator")]
 
 <PageTitle>Edit Plant</PageTitle>
 <div  class="row">

@@ -1,6 +1,6 @@
 @page "/edit-position"
 
-@attribute [Authorize]
+@attribute [Authorize(Roles="Administrator,Manager")]
 
 <PageTitle>Edit Position</PageTitle>
 <div  class="row">

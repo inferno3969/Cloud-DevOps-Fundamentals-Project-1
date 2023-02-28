@@ -1,5 +1,5 @@
 @page "/edit-application-user/{Id}"
-@attribute [Authorize]
+@attribute [Authorize(Roles="Administrator")]
 
 <div class="row">
     <div class="col-md-12">

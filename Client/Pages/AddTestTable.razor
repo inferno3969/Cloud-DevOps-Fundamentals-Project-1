@@ -1,5 +1,6 @@
-@page "/add-test-table"
-@attribute [Authorize]
+@page "/add-test-table"
+
+@attribute [Authorize(Roles="Manager,Administrator")]
 
 <PageTitle>Add TestTable</PageTitle>
     <div class="col-md-12">

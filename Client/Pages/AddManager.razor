@@ -1,5 +1,6 @@
-@page "/add-manager"
-@attribute [Authorize]
+@page "/add-manager"
+
+@attribute [Authorize(Roles="Administrator")]
 
 <PageTitle>Add Manager</PageTitle>
     <div class="col-md-12">

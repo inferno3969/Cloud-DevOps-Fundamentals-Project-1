@@ -1,5 +1,6 @@
-@page "/edit-part"
-@attribute [Authorize]
+@page "/edit-part"
+
+@attribute [Authorize(Roles="Employee,Manager")]
 
 <PageTitle>Edit Part</PageTitle>
 <div  class="row">
