@@ -1,0 +1,58 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+# GitHub recommends pinning actions to a commit SHA.
+# To get a newer version, you will need to update the SHA.
+# You can also reference a tag or branch, but the action may change without warning.
+
+name: Build and deploy ASP.Net Core app to an Azure Web App
+
+env:
+  AZURE_WEBAPP_NAME: devops-proj   # set this to your application's name
+  AZURE_WEBAPP_PACKAGE_PATH: './publish'      # set this to the path to your web app project, defaults to the repository root
+  DOTNET_VERSION: '7'                 # set this to the .NET Core version to use
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up .NET Core
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Set up dependency caching for faster builds
+        uses: actions/cache@v3
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/packages.lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-nuget-
+
+      - name: Build with dotnet and publish
+        run: |
+          dotnet restore ./CloudDevOpsProject1.sln
+          dotnet build ./CloudDevOpsProject1.sln --configuration Release --no-restore
+          dotnet publish ./CloudDevOpsProject1.sln -c Release
+          
+      - name: Moving the published app
+        run: |
+          cp -r ./Server/bin/Release/net7.0/publish/ ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+
+      - name: Deploy to Azure Web App
+        id: deploy-to-webapp
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: ${{ env.AZURE_WEBAPP_NAME }}
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          package: "${{ env.AZURE_WEBAPP_PACKAGE_PATH }}"
