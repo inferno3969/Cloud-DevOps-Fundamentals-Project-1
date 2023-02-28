@@ -7,9 +7,12 @@ using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Radzen;
 using Radzen.Blazor;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CloudDevOpsProject1.Client.Pages
 {
+    [Authorize(Roles="Administrator,Manager,Employee")] 
+    
     public partial class Managers
     {
         [Inject]
