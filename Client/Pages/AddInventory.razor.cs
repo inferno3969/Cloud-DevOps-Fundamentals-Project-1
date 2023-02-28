@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace CloudDevOpsProject1.Client.Pages
 {
-    [Authorize(Roles="Administrator")] 
+    [Authorize(Roles="Administrator,Manager")] 
 
     public partial class AddInventory
     {
