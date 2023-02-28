@@ -3,9 +3,9 @@
 
 <PageTitle>Login</PageTitle>
 <RadzenText Text="Login" TextStyle="Radzen.Blazor.TextStyle.H5" class="mb-4" TagName="Radzen.Blazor.TagName.H2" />
-<div class="row">
+<div class="container">
         <RadzenText TextStyle="TextStyle.Overline">*Email is username.</RadzenText>
-    <div class="col-md-12">
+    <div class="d-flex p-3" style="justify-content: center; max-width: 100%">
         <RadzenTemplateForm Action="@($" account/login?redirectUrl={redirectUrl}")" Data="@("login")"
             Method="post">
             <RadzenAlert Shade="Radzen.Shade.Lighter" Variant="Radzen.Variant.Flat" Size="Radzen.AlertSize.Small" AlertStyle="Radzen.AlertStyle.Danger" Visible="@errorVisible">@error</RadzenAlert>
