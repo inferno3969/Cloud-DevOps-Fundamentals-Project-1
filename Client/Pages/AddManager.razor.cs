@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace CloudDevOpsProject1.Client.Pages
 {
-    [Authorize(Roles="Administrator,Manager")] 
+    [Authorize(Roles="Administrator")] 
     
     public partial class AddManager
     {
