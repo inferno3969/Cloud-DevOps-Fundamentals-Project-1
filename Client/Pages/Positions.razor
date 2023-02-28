@@ -1,4 +1,5 @@
-@page "/positions"
+@page "/positions"
+
 @attribute [Authorize]
 
 <PageTitle>Positions</PageTitle>
@@ -26,7 +27,7 @@
 
                         <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
                             Shade="Shade.Lighter" Variant="Variant.Flat"
-                            Click=@(args => GridDeleteButtonClick(args, position)) @onclick:stopPropagation="true" />
+                            Click=@(args => GridDeleteButtonClick(args, position)) @onclick:stopPropagation="true" Disabled="true" />
                     </Template>
                 </RadzenDataGridColumn>
             </Columns>
