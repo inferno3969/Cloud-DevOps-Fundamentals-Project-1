@@ -13,7 +13,7 @@
 </div>
 <div class="row">
     <div class="col-md-12">
-        <RadzenButton Text="Export XLS" Icon="grid_on" Click="@(args => DevOps_Proj_DatabaseService.ExportInventoriesToExcel())" class="mb-4 me-2" /><RadzenButton Text="Export CSV" Icon="wrap_text" class="mb-4" />
+        <RadzenButton Text="Export XLS" Icon="grid_on" Click="@(args => DevOps_Proj_DatabaseService.ExportInventoriesToExcel())" class="mb-4 me-2" />
         <RadzenDataGrid @ref="grid0" ColumnWidth="200px"  AllowFiltering="true" FilterMode="FilterMode.Advanced" AllowPaging="true" AllowSorting="true"
             Data="@inventories" Count=count LoadData=@Grid0LoadData  TItem="CloudDevOpsProject1.Server.Models.DevOps_Proj_Database.Inventory" RowSelect="@EditRow" >
             <Columns>
