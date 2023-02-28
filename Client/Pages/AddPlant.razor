@@ -1,5 +1,6 @@
-@page "/add-plant"
-@attribute [Authorize]
+@page "/add-plant"
+
+@attribute [Authorize(Roles="Administrator")]
 
 <PageTitle>Add Plant</PageTitle>
     <div class="col-md-12">

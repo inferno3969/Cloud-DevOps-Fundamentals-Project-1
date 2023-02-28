@@ -1,6 +1,6 @@
 @page "/edit-employee"
 
-@attribute [Authorize]
+@attribute [Authorize(Roles="Administrator")]
 
 <PageTitle>Edit Employee</PageTitle>
 <div  class="row">

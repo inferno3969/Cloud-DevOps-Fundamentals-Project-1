@@ -1,5 +1,5 @@
 @page "/profile"
-@attribute [Authorize]
+@attribute [Authorize(Roles="Employee,Manager,Administrator")]
 
 <PageTitle>Profile</PageTitle>
 <RadzenHeading Size="H1" Text="Profile" />

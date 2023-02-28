@@ -1,5 +1,6 @@
-@page "/edit-manager"
-@attribute [Authorize]
+@page "/edit-manager"
+
+@attribute [Authorize(Roles="Administrator")]
 
 <PageTitle>Edit Manager</PageTitle>
 <div  class="row">

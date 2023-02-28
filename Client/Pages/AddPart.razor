@@ -1,5 +1,6 @@
-@page "/add-part"
-@attribute [Authorize]
+@page "/add-part"
+
+@attribute [Authorize(Roles="Manager,Administrator")]
 
 <PageTitle>Add Part</PageTitle>
     <div class="col-md-12">

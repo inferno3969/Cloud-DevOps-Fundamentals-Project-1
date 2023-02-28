@@ -1,6 +1,6 @@
 @page "/inventories"
 
-@attribute [Authorize]
+@attribute [Authorize(Roles="Employee,Manager,Administrator")]
 
 <PageTitle>Inventories</PageTitle>
 <div class="row" style="margin-bottom: 1rem">
@@ -36,4 +36,3 @@
             </Columns>
         </RadzenDataGrid>
     </div>
-</div>

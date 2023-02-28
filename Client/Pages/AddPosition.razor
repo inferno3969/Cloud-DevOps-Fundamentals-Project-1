@@ -1,5 +1,6 @@
-@page "/add-position"
-@attribute [Authorize]
+@page "/add-position"
+
+@attribute [Authorize(Roles="Administrator")]
 
 <PageTitle>Add Position</PageTitle>
     <div class="col-md-12">
